@@ -7,6 +7,15 @@
   transition: all 0.3s;
 
 }
+.menus{
+  font-size: 14px !important;
+  padding: 4px 15px !important;
+  border-radius: 22px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s;
+
+}
 .btn-primary {
   transition: all 0.3s;
   color: #ffffff;
@@ -71,3 +80,19 @@
 .btn-secondary:hover {
   color: #ffffff !important;
 }
+.btn-transparent{
+  transition: all 0.3s;
+  color: #ffffff !important;
+  background-color: #28af5a00 !important;
+  border: 1px solid #639b22 !important;
+}
+.btn-transparent:hover, .btn-transparent:active, .btn-transparent:focus, .btn-transparent:not(:disabled):not(.disabled):active {
+  color: var(--secondary-btn-color-hover);
+  background: rgb(98,155,34);
+  background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
+  transition: all 0.3s;
+}
+.py-50{
+  padding: 50px 0 50px 0 !important;
+}
+
