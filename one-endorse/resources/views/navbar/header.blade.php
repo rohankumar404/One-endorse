@@ -17,20 +17,20 @@
             <!-- Collapsible Navbar -->
             <div class="collapse navbar-collapse show w-70 d-flex align-items-center justify-content-end" id="navbarDark">
                 <ul class="navbar-nav justify-content-between p-0 mb-2 mb-xl-0 fs-5 p-2 text-center w-60">
-                    <li class="nav-item btn-secondary me-3">
-                        <a class="nav-link active" aria-current="page" href="#">Main</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link btn btn-secondary" href="#">Main</a>
                     </li>
-                    <li class="nav-item btn-secondary me-3">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link btn btn-secondary" href="#">About</a>
                     </li>
-                    <li class="nav-item btn-secondary me-3">
-                        <a class="nav-link" href="#">Contacts</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link btn btn-secondary" href="#">Contacts</a>
                     </li>
-                    <li class="nav-item btn-secondary me-3">
-                        <a class="nav-link" href="#">Blog</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link btn btn-secondary" href="#">Blog</a>
                     </li>
-                    <li class="nav-item btn-secondary me-3">
-                        <a class="nav-link" href="#">FAQs</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link btn btn-secondary" href="#">FAQs</a>
                     </li>
                 </ul>
 
@@ -39,14 +39,14 @@
                     <ul class="navbar-nav d-flex justify-content-end">
                         @if (Auth::check())
                             <!-- If the user is authenticated -->
-                            <li class="nav-item btn-primary me-3">
+                            <li class="nav-item btn btn-primary border-0 me-3">
                                 <a href="{{ url('/dashboard') }}" class="btn-dashboard">Dashboard</a>
                             </li>
                         @else
-                            <li class="nav-item btn-primary me-3">
+                            <li class="nav-item btn btn-primary border-0 me-3">
                                 <a href="{{ route('login') }}" class="btn-signin">Sign In</a>
                             </li>
-                            <li class="nav-item btn-primary me-3">
+                            <li class="nav-item btn btn-primary border-0 me-3">
                                 <a href="{{ route('register') }}" class="btn-signup">Sign Up</a>
                             </li>
                         @endif
