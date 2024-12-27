@@ -1,6 +1,7 @@
 body {
     position: relative;
     top: 75px;
+    z-index: 10;
 }
 
 .home-banner-img {
@@ -8,8 +9,8 @@ body {
     background-image: url("https://img.freepik.com/premium-photo/soccer-ball-surrounded-by-colorful-confetti-celebration_118124-313644.jpg?w=826");
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 75px);
     z-index: 1;
+    @media(min-width:992px){height: calc(100vh - 75px);}
 }
 
 /* Add the blur effect and black transparent overlay */
@@ -24,12 +25,9 @@ body {
     filter: blur(4px);
     z-index: -1;
 }
-.box-shadow-32{
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
 .conpanies-ww{
     position: relative;
-    background-image: url("https://img.freepik.com/premium-photo/composite-image-rugby-player-sitting-field-with-football_1134-40327.jpg?w=826");
+    background-image: url("https://img.freepik.com/premium-photo/muscle-fiber-type-genetics-sports-genetics-illustrated-3d-muscle-fiber-analysis-interface-showing_1165841-34991.jpg?w=826");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -41,7 +39,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.87);
     z-index: -1;
 }
 .companies-logos{
@@ -53,4 +51,59 @@ body {
 }
 .companies-logos .c-logs img{
    width: 100%;
+}
+
+.your-sports-marketing{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/dynamic-minimalist-line-drawing-runner-motion-conveying-speed-athleticism_762139-28320.jpg?w=826");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.your-sports-marketing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(128, 100%, 97%, 0.87);
+    z-index: -1;
+}
+.marketing-card{
+    background-color: #fff;;
+}
+.marketing-card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.m-card-btn{
+    width: 155px;
+}
+.m-card-p{
+    padding: 25px 65px 20px 65px;
+}
+@media(max-width:767px){
+    .m-card-p{
+        padding: 25px;
+    }
+}
+.recent-campaigns{
+    position: relative;
+    background-color: #f2fff3;
+}
+.section-bg{
+    border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;
+    @media(min-width:1150px){border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;}
+    @media(min-width:1050px) and (max-width:1149px){border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;}
+    @media(min-width:992px) and (max-width:1049px){border-radius: 14% 14% 0% 0% / 38% 38% 0% 0%;}
+    @media(min-width:790px) and (max-width:991px){border-radius: 16% 16% 0% 0% / 44% 44% 0% 0%;}
+    @media(min-width:576px) and (max-width:789px){border-radius: 18% 18% 0% 0% / 30% 30% 0% 0%;}
+    @media(min-width:400px) and (max-width:575px){border-radius: 20% 20% 0% 0% / 25% 25% 0% 0%;}
+}
+@media(max-width:520px){
+    .rest-text-align{
+        align-items: center !important;
+    }
 }

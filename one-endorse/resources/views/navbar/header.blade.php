@@ -17,19 +17,19 @@
             <div class="collapse navbar-collapse d-flex align-items-center" id="navbarDark">
                 <ul class="navbar-nav justify-content-between p-0 mb-2 mb-xl-0 fs-5 p-2 text-center w-70">
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary" href="#">Main</a>
+                        <a class="nav-link menus btn-secondary uppercase" href="#">Main</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary" href="#">About</a>
+                        <a class="nav-link menus btn-secondary uppercase" href="#">About</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary" href="#">Contacts</a>
+                        <a class="nav-link menus btn-secondary uppercase" href="#">Contacts</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary" href="#">Blog</a>
+                        <a class="nav-link menus btn-secondary uppercase" href="#">Blog</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary" href="#">FAQs</a>
+                        <a class="nav-link menus btn-secondary uppercase" href="#">FAQs</a>
                     </li>
                 </ul>
 
@@ -37,10 +37,10 @@
                 <div class="auth-buttons w-30">
                     <ul class="navbar-nav d-flex justify-content-end">
                         <li class="nav-item menus btn-primary border-0 me-3">
-                            <a href="{{ route('login') }}" class="btn-signin">Sign In</a>
+                            <a href="{{ route('login') }}" class="uppercase btn-signin">Sign In</a>
                         </li>
                         <li class="nav-item menus btn-primary border-0">
-                            <a href="{{ route('register') }}" class="btn-signup">Sign Up</a>
+                            <a href="{{ route('register') }}" class="uppercase btn-signup">Sign Up</a>
                         </li>
                     </ul>
                 </div>

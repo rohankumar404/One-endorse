@@ -1,10 +1,10 @@
 footer {
+    background-color: #f8f9fa;
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #f8f9fa;
-    z-index: 1000;
+    z-index: 10;
 }
 .nav-item{
     font-size: 14px;
