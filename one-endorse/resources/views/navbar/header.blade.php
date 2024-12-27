@@ -9,14 +9,13 @@
             </div>
 
             <!-- Navbar Toggler for Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
-                aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Collapsible Navbar -->
-            <div class="collapse navbar-collapse show w-70 d-flex align-items-center justify-content-end" id="navbarDark">
-                <ul class="navbar-nav justify-content-between p-0 mb-2 mb-xl-0 fs-5 p-2 text-center w-60">
+            <div class="collapse navbar-collapse d-flex align-items-center" id="navbarDark">
+                <ul class="navbar-nav justify-content-between p-0 mb-2 mb-xl-0 fs-5 p-2 text-center w-70">
                     <li class="nav-item me-3">
                         <a class="nav-link menus btn-secondary" href="#">Main</a>
                     </li>
@@ -37,22 +36,76 @@
                 <!-- Authentication Buttons -->
                 <div class="auth-buttons w-30">
                     <ul class="navbar-nav d-flex justify-content-end">
-                        @if (Auth::check())
-                            <!-- If the user is authenticated -->
-                            <li class="nav-item menus btn-primary border-0 me-3">
-                                <a href="{{ url('/dashboard') }}" class="btn-dashboard">Dashboard</a>
-                            </li>
-                        @else
-                            <li class="nav-item menus btn-primary border-0 me-3">
-                                <a href="{{ route('login') }}" class="btn-signin">Sign In</a>
-                            </li>
-                            <li class="nav-item menus btn-primary border-0 me-3">
-                                <a href="{{ route('register') }}" class="btn-signup">Sign Up</a>
-                            </li>
-                        @endif
+                        <li class="nav-item menus btn-primary border-0 me-3">
+                            <a href="{{ route('login') }}" class="btn-signin">Sign In</a>
+                        </li>
+                        <li class="nav-item menus btn-primary border-0">
+                            <a href="{{ route('register') }}" class="btn-signup">Sign Up</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 </header>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggler = document.querySelector('.navbar-toggler');
+        const navbar = document.querySelector('#navbarDark');
+
+        toggler.addEventListener('click', function () {
+            navbar.classList.toggle('show');
+        });
+    });
+</script>
+
+<!-- CSS -->
+<style>
+    /* Default navbar styles */
+    .collapse {
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+    }
+
+    /* Large screens: Ensure the menu is always visible */
+    @media (min-width: 992px) {
+        .collapse {
+            display: flex !important;
+            max-height: none !important; /* No height restrictions */
+            overflow: visible !important;
+        }
+
+        .navbar-toggler {
+            display: none; /* Hide the toggle button */
+        }
+    }
+
+    /* Medium and small screens: Hide menu by default */
+    @media (max-width: 991.98px) {
+        .collapse {
+            display: none; /* Menu hidden by default */
+            max-height: 0;
+        }
+
+        .collapse.show {
+            display: block; /* Show menu when toggled */
+            max-height: 500px; /* Adjust as per content height */
+        }
+
+        .navbar-toggler {
+            display: block; /* Ensure toggle button is visible */
+        }
+    }
+
+    /* Style adjustments for better UI */
+    .navbar-nav {
+        flex-direction: column; /* Stack menu items vertically for small screens */
+        gap: 10px; /* Add spacing between menu items */
+    }
+
+    .navbar-nav li {
+        margin: 0; /* Reset margin */
+    }
+</style>
