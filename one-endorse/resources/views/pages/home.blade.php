@@ -150,14 +150,16 @@
     <div class="section-bg bg-dark py-80">
         <div class="container">
             <div class="row">
-                <div class="col-12 pb-30 border-bottom-1 d-flex flex-wrap rest-text-align justify-content-between align-items-center">
+                <div class="col-12 pb-30 border-bottom-1 d-flex flex-wrap resp-text-align align-items-center">
                     <h3 class="font-34 text-800 text-white">Our Recent Campaigns</h3>
                     <p class="text-secondary m-0 text-white font-16">All in One Place</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center py-30">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-20">
-
+                    <div class="r-compaigns-card p-1">
+                        
+                    </div>
                 </div>
             </div>
         </div>

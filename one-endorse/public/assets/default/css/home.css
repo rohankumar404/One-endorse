@@ -94,16 +94,22 @@ body {
     background-color: #f2fff3;
 }
 .section-bg{
-    border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;
     @media(min-width:1150px){border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;}
     @media(min-width:1050px) and (max-width:1149px){border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;}
     @media(min-width:992px) and (max-width:1049px){border-radius: 14% 14% 0% 0% / 38% 38% 0% 0%;}
     @media(min-width:790px) and (max-width:991px){border-radius: 16% 16% 0% 0% / 44% 44% 0% 0%;}
     @media(min-width:576px) and (max-width:789px){border-radius: 18% 18% 0% 0% / 30% 30% 0% 0%;}
     @media(min-width:400px) and (max-width:575px){border-radius: 20% 20% 0% 0% / 25% 25% 0% 0%;}
+    @media(max-width:399px){border-radius: 22% 22% 0% 0% / 20% 20% 0% 0%;}
+}
+.resp-text-align{
+    justify-content: space-between;
 }
 @media(max-width:520px){
-    .rest-text-align{
-        align-items: center !important;
+    .resp-text-align{
+        justify-content: center !important;
+    }
+    .resp-text-align p{
+        margin: 0 10px;
     }
 }
