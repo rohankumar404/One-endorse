@@ -6,7 +6,7 @@ body {
 
 .home-banner-img {
     position: relative;
-    background-image: url("https://img.freepik.com/premium-photo/soccer-ball-surrounded-by-colorful-confetti-celebration_118124-313644.jpg?w=826");
+    background-image: url("/assets/img/s-bg/433.jpg");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    filter: blur(4px);
+    backdrop-filter: blur(2px);
     z-index: -1;
 }
 .conpanies-ww{
@@ -73,7 +73,7 @@ body {
 .marketing-card{
     background-color: #fff;;
 }
-.marketing-card img{
+.marketing-card img, .card-img img{
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
@@ -94,7 +94,7 @@ body {
     background-color: #f2fff3;
 }
 .section-bg{
-    @media(min-width:1150px){border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;}
+    @media(min-width:1150px){border-radius: 12% 12% 0% 0% / 25% 25% 0% 0%;}
     @media(min-width:1050px) and (max-width:1149px){border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;}
     @media(min-width:992px) and (max-width:1049px){border-radius: 14% 14% 0% 0% / 38% 38% 0% 0%;}
     @media(min-width:790px) and (max-width:991px){border-radius: 16% 16% 0% 0% / 44% 44% 0% 0%;}
@@ -110,6 +110,287 @@ body {
         justify-content: center !important;
     }
     .resp-text-align p{
-        margin: 0 10px;
+        margin: 0 10px !important;
     }
+}
+.arrow-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.arrow-circle img{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+}
+.r-compaigns-card:hover .arrow-circle img {
+    transform: rotate(45deg);
+}
+.rounded-adv-us{
+    border-radius: 20px 20px 20px 50% / 20px 20px 20px 45%;
+}
+.rounded-adv-us-frem, .rounded-adv-us img{
+    border-radius: 20px 20px 20px 52% / 20px 20px 20px 77% !important;
+}
+.img-gallery{
+    position: relative;
+    background-image: url("/assets/img/s-bg/2656.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.img-gallery:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.87);
+    z-index: -1;
+}
+.gallery-header .section-head img{
+    width: 8%;
+}
+.gallery-container {
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+}
+.slider-outer {
+    width: 905px;
+    overflow: hidden;
+    padding: 0 0 0 27px;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    transition: transform 0.5s ease-in-out;
+    width: calc(250px * 3 + 20px * 2); /* Adjust width to accommodate 3 images with margin */
+}
+
+.slide {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    width: 250px;
+    height: 250px;
+}
+
+.slide.active {
+    width: 350px;
+    height: 350px;
+    transform: scale(1);
+}
+
+.slide:not(.active) {
+    transform: scale(0.95);
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #609822;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.prev {
+    left: 20px;
+    transform: rotate(180deg);
+    top: 45%;
+}
+.next { right: 20px; }
+
+.nav-button:hover {
+    background: rgb(98,155,34);
+    background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.blog_section_2024 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.blog_header_2024 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.blog_tag_2024 {
+background: #67B267;
+color: white;
+padding: 5px 15px;
+border-radius: 15px;
+font-size: 14px;
+}
+
+.view_all_2024 {
+color: #67B267;
+text-decoration: none;
+font-size: 14px;
+}
+
+.slider_container_2024 {
+position: relative;
+overflow: hidden;
+padding: 40px 0;
+}
+
+.slider_wrapper_2024 {
+display: flex;
+transition: transform 0.5s ease;
+}
+
+.slide_item_2024 {
+min-width: calc(33.333% - 40px);
+margin: 0 20px;
+background: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.5s ease;
+transform: scale(0.9);
+opacity: 0.8;
+}
+
+/* Style for the center slide */
+.slide_item_2024.active {
+transform: scale(1.1);
+opacity: 1;
+box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+z-index: 1;
+}
+
+.slide_img_2024 {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.slide_content_2024 {
+padding: 15px;
+}
+
+.slide_tag_2024 {
+background: #67B267;
+color: white;
+padding: 3px 10px;
+border-radius: 15px;
+font-size: 12px;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.read_time_2024 {
+color: #666;
+font-size: 12px;
+float: right;
+margin-top: 3px;
+}
+
+.slide_title_2024 {
+margin: 10px 0;
+font-size: 16px;
+line-height: 1.4;
+}
+
+.slide_text_2024 {
+color: #666;
+font-size: 14px;
+line-height: 1.6;
+margin-bottom: 15px;
+}
+
+.read_more_2024 {
+color: #67B267;
+text-decoration: none;
+font-size: 14px;
+}
+
+.slider_nav_2024 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
+}
+
+.dots_container_2024 {
+display: flex;
+gap: 5px;
+}
+
+.dot_2024 {
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: #ddd;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.dot_2024.active {
+background: #67B267;
+transform: scale(1.2);
+}
+
+.nav_buttons_2024 {
+display: flex;
+gap: 10px;
+}
+
+.prev_btn_2024, .next_btn_2024 {
+background: white;
+border: 1px solid #ddd;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+font-size: 20px;
+transition: all 0.3s ease;
+}
+
+.prev_btn_2024:hover, .next_btn_2024:hover {
+background: #67B267;
+color: white;
+border-color: #67B267;
 }
