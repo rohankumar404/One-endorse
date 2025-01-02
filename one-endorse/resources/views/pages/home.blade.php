@@ -202,6 +202,7 @@
         </div>
     </div>
 </section>
+<!-- image gallery section  -->
 <section class="img-gallery py-80">
     <div class="container position-relative">
         <div class="row">
@@ -216,191 +217,127 @@
         </div>
         <div class="gallery-container">
             <div class="slider-outer">
-                <button class="nav-button prev"><svg enable-background="new 0 0 160 160" height="18" viewBox="0 0 160 160" width="18" xmlns="http://www.w3.org/2000/svg"><g id="Line_icons"><path d="m-1500-1204.991h3160v2608h-3160z" fill="#ffffff00"/><g><g><path d="m86.417 160c-1.198 0-2.4-.429-3.358-1.297-2.045-1.856-2.198-5.019-.343-7.063l65.254-71.912-65.242-71.354c-1.863-2.038-1.722-5.201.316-7.064 2.038-1.862 5.201-1.722 7.064.316l68.314 74.715c1.741 1.905 1.747 4.822.013 6.734l-68.313 75.285c-.987 1.087-2.344 1.64-3.705 1.64z" fill="#4a4a4a"/></g><g><path d="m154.733 84.714h-149.466c-2.761 0-5-2.238-5-5s2.239-5 5-5h149.466c2.762 0 5 2.238 5 5s-2.238 5-5 5z" fill="#4a4a4a"/></g></g></g><g id="Raster" display="none"><path d="m148 160h-136c-6.627 0-12-5.373-12-12v-136c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v136c0 6.627-5.373 12-12 12z" display="inline" fill="#4a4a4a" opacity=".3"/></g></svg></button>
-                <button class="nav-button next"><svg enable-background="new 0 0 160 160" height="18" viewBox="0 0 160 160" width="18" xmlns="http://www.w3.org/2000/svg"><g id="Line_icons"><path d="m-1500-1204.991h3160v2608h-3160z" fill="#ffffff00"/><g><g><path d="m86.417 160c-1.198 0-2.4-.429-3.358-1.297-2.045-1.856-2.198-5.019-.343-7.063l65.254-71.912-65.242-71.354c-1.863-2.038-1.722-5.201.316-7.064 2.038-1.862 5.201-1.722 7.064.316l68.314 74.715c1.741 1.905 1.747 4.822.013 6.734l-68.313 75.285c-.987 1.087-2.344 1.64-3.705 1.64z" fill="#4a4a4a"/></g><g><path d="m154.733 84.714h-149.466c-2.761 0-5-2.238-5-5s2.239-5 5-5h149.466c2.762 0 5 2.238 5 5s-2.238 5-5 5z" fill="#4a4a4a"/></g></g></g><g id="Raster" display="none"><path d="m148 160h-136c-6.627 0-12-5.373-12-12v-136c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v136c0 6.627-5.373 12-12 12z" display="inline" fill="#4a4a4a" opacity=".3"/></g></svg></button>
+                <button class="nav-button border-pry prev"><svg viewBox="0 0 16 16" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 2)"><path d="m6.00391 0-6.00391 6 6.00195 6 .707031-.705078-4.79492-4.79492h12.0859v-1h-12.0859l4.79688-4.79688z" fill="#4a4a4a"/></g></svg></button>
+                <button class="nav-button border-pry next"><svg viewBox="0 0 16 16" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 2)"><path d="m7.99609 12 6.00391-6-6.00195-6-.707031.705078 4.79492 4.79492h-12.0859v1h12.0859l-4.79688 4.79688z" fill="#4a4a4a"/></g></svg></button>
                 <div class="slider-container"></div>
             </div>
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section>
+<!-- bolg section  -->
+<section class="blog-section py-80">
     <div class="container">
-        <div class="blog_section_2024" id="blogSection2024">
+        <div class="blog_section_2nd" id="blogSection2nd">
             <!-- Header section same as before -->
-            <div class="blog_header_2024">
+            <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <span class="blog_tag_2024">Blog</span>
-                    <h1>The Latest Industry News</h1>
-                    <p>Stay informed with our expert analysis and insights.</p>
+                    <span class="section-tag">Blog</span>
+                    <h1 class="font-34 text-800 mt-2">The Latest Industry News</h1>
+                    <p class="font-20 text-500">Stay informed with our expert analysis and insights.</p>
                 </div>
-                <a href="#" class="view_all_2024">View All</a>
+                <a href="#" class="border-pry rounded-sm p-2 text-decoration-none text-black font-14">View All</a>
             </div>
 
-            <div class="slider_container_2024" id="sliderContainer2024">
-                <div class="slider_wrapper_2024" id="sliderWrapper2024">
+            <div class="slider_container_2nd" id="sliderContainer2nd">
+                <div class="slider_wrapper_2nd" id="sliderWrapper2nd">
                     <!-- Slides will be dynamically added here -->
                 </div>
             </div>
 
-            <div class="slider_nav_2024">
-                <div class="dots_container_2024" id="dotsContainer2024">
+            <div class="slider_nav_2nd">
+                <div class="dots_container_2nd" id="dotsContainer2nd">
                     <!-- Dots will be dynamically added here -->
                 </div>
-                <div class="nav_buttons_2024">
-                    <button class="prev_btn_2024" id="prevBtn2024">←</button>
-                    <button class="next_btn_2024" id="nextBtn2024">→</button>
+                <div class="nav_buttons_2nd">
+                    <button class="prev_btn_2nd border-pry" id="prevBtn2nd"><svg viewBox="0 0 16 16" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 2)"><path d="m6.00391 0-6.00391 6 6.00195 6 .707031-.705078-4.79492-4.79492h12.0859v-1h-12.0859l4.79688-4.79688z" fill="#4a4a4a"/></g></svg></button>
+                    <button class="next_btn_2nd border-pry" id="nextBtn2nd"><svg viewBox="0 0 16 16" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 2)"><path d="m7.99609 12 6.00391-6-6.00195-6-.707031.705078 4.79492 4.79492h-12.0859v1h12.0859l-4.79688 4.79688z" fill="#4a4a4a"/></g></svg></button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            const blogSlider2024 = {
-                posts: [
-                    {
-                        image: "/api/placeholder/400/320",
-                        tag: "Sports Celeb Marketing",
-                        title: "Shubman Gill fined Rs.12 lakh for slow over rate during CSK vs GT match",
-                        content: "Sunrisers Hyderabad (SRH) and Mumbai Indians face each other in search of their first win in Indian Premier League 2024 at the Rajiv Gandhi Stadium in Hyderabad on Wednesday. Here are all the head-to-head numbers and stats you need to know ahead of the match.",
-                        readTime: "5 min read"
-                    },
-                    {
-                        image: "/api/placeholder/400/320",
-                        tag: "Technology",
-                        title: "The Future of AI in Business Operations",
-                        content: "Explore how artificial intelligence is transforming business operations and what it means for the future of work in various industries.",
-                        readTime: "7 min read"
-                    },
-                    {
-                        image: "/api/placeholder/400/320",
-                        tag: "Finance",
-                        title: "Global Market Trends 2024",
-                        content: "Analysis of emerging market trends and their impact on global economics in the coming years.",
-                        readTime: "6 min read"
-                    },
-                    {
-                        image: "/api/placeholder/400/320",
-                        tag: "Innovation",
-                        title: "Breakthrough in Renewable Energy",
-                        content: "Latest developments in renewable energy technology that could revolutionize how we power our world.",
-                        readTime: "4 min read"
-                    },
-                    {
-                        image: "/api/placeholder/400/320",
-                        tag: "Healthcare",
-                        title: "Medical Innovation Report",
-                        content: "Recent breakthroughs in medical technology and their potential impact on healthcare delivery.",
-                        readTime: "8 min read"
-                    },
-                    {
-                        image: "/api/placeholder/400/320",
-                        tag: "Business",
-                        title: "Startup Success Stories",
-                        content: "Inspiring stories of successful startups and the lessons we can learn from their journey.",
-                        readTime: "5 min read"
-                    }
-                ],
-                currentSlide: 0,
-                autoSlideInterval: null,
-
-                init: function() {
-                    this.createSlides();
-                    this.createDots();
-                    this.bindEvents();
-                    this.startAutoSlide();
-                    this.updateActiveSlide(0); // Initialize first slide as active
-                },
-
-                createSlides: function() {
-                    this.posts.forEach((post, index) => {
-                        $('#sliderWrapper2024').append(`
-                            <div class="slide_item_2024 ${index === 0 ? 'active' : ''}">
-                                <img src="${post.image}" alt="${post.title}" class="slide_img_2024">
-                                <div class="slide_content_2024">
-                                    <span class="slide_tag_2024">${post.tag}</span>
-                                    <span class="read_time_2024">${post.readTime}</span>
-                                    <h3 class="slide_title_2024">${post.title}</h3>
-                                    <p class="slide_text_2024">${post.content}</p>
-                                    <a href="#" class="read_more_2024">Read More →</a>
-                                </div>
-                            </div>
-                        `);
-                    });
-                },
-
-                createDots: function() {
-                    this.posts.forEach((_, index) => {
-                        $('#dotsContainer2024').append(`
-                            <div class="dot_2024 ${index === 0 ? 'active' : ''}" data-index="${index}"></div>
-                        `);
-                    });
-                },
-
-                updateActiveSlide: function(index) {
-                    $('.slide_item_2024').removeClass('active');
-                    $('.slide_item_2024').eq(index).addClass('active');
-                },
-
-                goToSlide: function(index) {
-                    this.currentSlide = index;
-                    const slideWidth = $('.slide_item_2024').outerWidth(true);
-                    const offset = slideWidth * this.currentSlide;
-                    $('#sliderWrapper2024').css('transform', `translateX(-${offset}px)`);
-                    $('.dot_2024').removeClass('active').eq(this.currentSlide).addClass('active');
-                    this.updateActiveSlide(this.currentSlide);
-                },
-
-                nextSlide: function() {
-                    const nextIndex = (this.currentSlide + 1) % this.posts.length;
-                    this.goToSlide(nextIndex);
-                },
-
-                prevSlide: function() {
-                    const prevIndex = (this.currentSlide - 1 + this.posts.length) % this.posts.length;
-                    this.goToSlide(prevIndex);
-                },
-
-                startAutoSlide: function() {
-                    this.autoSlideInterval = setInterval(() => this.nextSlide(), 5000);
-                },
-
-                stopAutoSlide: function() {
-                    clearInterval(this.autoSlideInterval);
-                },
-
-                bindEvents: function() {
-                    $('#nextBtn2024').click(() => this.nextSlide());
-                    $('#prevBtn2024').click(() => this.prevSlide());
-                    $('.dot_2024').click(function() {
-                        blogSlider2024.goToSlide($(this).data('index'));
-                    });
-
-                    $('#sliderContainer2024').hover(
-                        () => this.stopAutoSlide(),
-                        () => this.startAutoSlide()
-                    );
-                }
-            };
-
-            // Initialize the slider
-            blogSlider2024.init();
-        });
-    </script>
+</section>
+<!-- discover section  -->
+<section class="discover bg-black py-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="section-head">
+                    <span class="section-tag">Discover</span>
+                    <h3 class="font-34 text-800 text-white mt-3">Find Your Perfect <br> Collaborator</h3>
+                </div>
+                <div class="sign-btn">
+                    <button class="border-pry rounded-mid px-3 py-1 text-white hover-bg-temp mt-3">Sign Up</button>
+                </div>
+                <div class="p-4">
+                    <img src="../assets/img/icon/elements/Layer_1.png" alt="elements">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 d-flex flex-column justify-content-between">
+                <div class="d-flex">
+                    <div class="col-2 elemant">
+                        <img src="../assets/img/icon/elements/Relume.png" alt="elements">
+                    </div>
+                    <div class=" col-10 discover-content d-flex justify-content-between">
+                        <div class="d-cont text-white pl-20">
+                            <h4 class="font-24 text-600">How It Works</h4>
+                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-2 elemant-t">
+                        <img src="../assets/img/icon/elements/Relume.png" alt="elements">
+                    </div>
+                    <div class=" col-10 discover-content d-flex justify-content-between">
+                        <div class="d-cont text-white pl-20">
+                            <h4 class="font-24 text-600">How It Works</h4>
+                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-2 elemant-t">
+                        <img src="../assets/img/icon/elements/Relume.png" alt="elements">
+                    </div>
+                    <div class=" col-10 discover-content d-flex justify-content-between">
+                        <div class="d-cont text-white pl-20">
+                            <h4 class="font-24 text-600">How It Works</h4>
+                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-2 elemant-t">
+                        <img src="../assets/img/icon/elements/Relume.png" alt="elements">
+                    </div>
+                    <div class=" col-10 discover-content d-flex justify-content-between">
+                        <div class="d-cont text-white pl-20">
+                            <h4 class="font-24 text-600">How It Works</h4>
+                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta pt-60">
+    <div class="bg-color py-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="cta-cnt text-center">
+                        <h3 class="font-34 text-800">Ready to try it out?</h3>
+                        <p class="font-14 text-normal">Sign up now and get 50% off your first month of using our product.</p>
+                        <div class="cta-btn d-flex justify-content-center gap-2">
+                            <button class="rounded-sm bg-temp px-3 py-1 text-white font-14">Sign up</button>
+                            <button class="rounded-sm border-pry px-3 py-1 text-black font-14">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

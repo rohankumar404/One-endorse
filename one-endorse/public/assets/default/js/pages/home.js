@@ -1,3 +1,4 @@
+// image gallery js 
 $(document).ready(function() {
     const images = [
         'https://img.freepik.com/free-photo/athletic-male-rugby-player-holding-ball-with-dust_23-2148793371.jpg?t=st=1735541399~exp=1735544999~hmac=16cc4ad46c3734afe487681e29d0e2cfa433f7619a3f5c56e3834d2eb8cec5c7&w=740',
@@ -53,7 +54,7 @@ $(document).ready(function() {
     }
 
     function startAutoSlide() {
-        autoSlideInterval = setInterval(() => moveSlide('next'), 5000);
+        autoSlideInterval = setInterval(() => moveSlide('next'), 3000);
     }
 
     function stopAutoSlide() {
@@ -85,4 +86,134 @@ $(document).ready(function() {
 
     // Handle window resize
     $(window).resize(updateSliderPosition);
+});
+
+// blog section javasript 
+$(document).ready(function() {
+    const blogSlider2nd = {
+        posts: [
+            {
+                image: "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387000/387041.jpg",
+                tag: "Sports",
+                title: "Shubman Gill fined Rs.12 lakh for slow over rate during CSK vs GT match",
+                content: "Sunrisers Hyderabad (SRH) and Mumbai Indians face each other in search of their first win in Indian Premier league 2024 at the Rajiv Gandhi Stadium in Hyderabad on Wednesday. Here are all the head-to-head numbers and stats you need to know ahead of the match.",
+                readTime: "5 min read"
+            },
+            {
+                image: "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387000/387041.jpg",
+                tag: "Technology",
+                title: "Shubman Gill fined Rs.12 lakh for slow over rate during CSK vs GT match",
+                content: "Sunrisers Hyderabad (SRH) and Mumbai Indians face each other in search of their first win in Indian Premier league 2024 at the Rajiv Gandhi Stadium in Hyderabad on Wednesday. Here are all the head-to-head numbers and stats you need to know ahead of the match.",
+                readTime: "7 min read"
+            },
+            {
+                image: "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387000/387041.jpg",
+                tag: "Finance",
+                title: "Shubman Gill fined Rs.12 lakh for slow over rate during CSK vs GT match",
+                content: "Sunrisers Hyderabad (SRH) and Mumbai Indians face each other in search of their first win in Indian Premier league 2024 at the Rajiv Gandhi Stadium in Hyderabad on Wednesday. Here are all the head-to-head numbers and stats you need to know ahead of the match.",
+                readTime: "6 min read"
+            },
+            {
+                image: "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387000/387041.jpg",
+                tag: "Innovation",
+                title: "Shubman Gill fined Rs.12 lakh for slow over rate during CSK vs GT match",
+                content: "Sunrisers Hyderabad (SRH) and Mumbai Indians face each other in search of their first win in Indian Premier league 2024 at the Rajiv Gandhi Stadium in Hyderabad on Wednesday. Here are all the head-to-head numbers and stats you need to know ahead of the match.",
+                readTime: "4 min read"
+            },
+            {
+                image: "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387000/387041.jpg",
+                tag: "Healthcare",
+                title: "Shubman Gill fined Rs.12 lakh for slow over rate during CSK vs GT match",
+                content: "Sunrisers Hyderabad (SRH) and Mumbai Indians face each other in search of their first win in Indian Premier league 2024 at the Rajiv Gandhi Stadium in Hyderabad on Wednesday. Here are all the head-to-head numbers and stats you need to know ahead of the match.",
+                readTime: "8 min read"
+            }
+        ],
+        currentSlide: 0,
+        autoSlideInterval: null,
+
+        init: function() {
+            this.createSlides();
+            this.createDots();
+            this.bindEvents();
+            this.startAutoSlide();
+            this.updateActiveSlide(0);
+        },
+
+        createSlides: function() {
+            this.posts.forEach((post, index) => {
+                $('#sliderWrapper2nd').append(`
+                    <div class="slide_item_2nd pb-25 ${index === 0 ? 'active' : ''}">
+                        <img src="${post.image}" alt="${post.title}" class="slide_img_2nd">
+                        <div class="p-4">
+                            <span class="slide_tag_2nd font-14">${post.tag}</span>
+                            <span class="float-end font-12 mt-1">${post.readTime}</span>
+                            <h3 class="font-20 text-700 mt-2">${post.title}</h3>
+                            <p class="slide_text_2nd font-14 text-normal">${post.content}</p>
+                            <a href="#" class="read_more_2nd d-flex align-items-center">Read More <span><img src="../assets/img/icon/home/Vector.png" alt="dsds"/></span></a>
+                        </div>
+                    </div>
+                `);
+            });
+        },
+
+        createDots: function() {
+            this.posts.forEach((_, index) => {
+                $('#dotsContainer2nd').append(`
+                    <div class="dot_2nd ${index === 0 ? 'active' : ''}" data-index="${index}"></div>
+                `);
+            });
+        },
+
+        updateActiveSlide: function(index) {
+            $('.slide_item_2nd').removeClass('active');
+            $('.slide_item_2nd').eq(index).addClass('active');
+
+            // Center the active slide
+            const slideWidth = $('.slide_item_2nd').outerWidth(true);
+            const containerWidth = $('#sliderContainer2nd').width();
+            const offset = (containerWidth / 2) - (slideWidth / 2) - (slideWidth * index);
+
+            $('#sliderWrapper2nd').css('transform', `translateX(${offset}px)`);
+        },
+
+        goToSlide: function(index) {
+            this.currentSlide = index;
+            $('.dot_2nd').removeClass('active').eq(this.currentSlide).addClass('active');
+            this.updateActiveSlide(this.currentSlide);
+        },
+
+        nextSlide: function() {
+            const nextIndex = (this.currentSlide + 1) % this.posts.length;
+            this.goToSlide(nextIndex);
+        },
+
+        prevSlide: function() {
+            const prevIndex = (this.currentSlide - 1 + this.posts.length) % this.posts.length;
+            this.goToSlide(prevIndex);
+        },
+
+        startAutoSlide: function() {
+            this.autoSlideInterval = setInterval(() => this.nextSlide(), 3000);
+        },
+
+        stopAutoSlide: function() {
+            clearInterval(this.autoSlideInterval);
+        },
+
+        bindEvents: function() {
+            $('#nextBtn2nd').click(() => this.nextSlide());
+            $('#prevBtn2nd').click(() => this.prevSlide());
+            $('.dot_2nd').click(function() {
+                blogSlider2nd.goToSlide($(this).data('index'));
+            });
+
+            $('#sliderContainer2nd').hover(
+                () => this.stopAutoSlide(),
+                () => this.startAutoSlide()
+            );
+        }
+    };
+
+    // Initialize the slider
+    blogSlider2nd.init();
 });

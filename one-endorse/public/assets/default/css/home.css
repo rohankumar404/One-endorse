@@ -43,7 +43,7 @@ body {
     z-index: -1;
 }
 .companies-logos{
-    background-color: #6198227a;
+    background-color: #54851c63;
 }
 .companies-logos .c-logs{
     height: 70px;
@@ -95,12 +95,12 @@ body {
 }
 .section-bg{
     @media(min-width:1150px){border-radius: 12% 12% 0% 0% / 25% 25% 0% 0%;}
-    @media(min-width:1050px) and (max-width:1149px){border-radius: 12% 12% 0% 0% / 50% 50% 0% 0%;}
-    @media(min-width:992px) and (max-width:1049px){border-radius: 14% 14% 0% 0% / 38% 38% 0% 0%;}
-    @media(min-width:790px) and (max-width:991px){border-radius: 16% 16% 0% 0% / 44% 44% 0% 0%;}
-    @media(min-width:576px) and (max-width:789px){border-radius: 18% 18% 0% 0% / 30% 30% 0% 0%;}
-    @media(min-width:400px) and (max-width:575px){border-radius: 20% 20% 0% 0% / 25% 25% 0% 0%;}
-    @media(max-width:399px){border-radius: 22% 22% 0% 0% / 20% 20% 0% 0%;}
+    @media(min-width:1050px) and (max-width:1149px){border-radius: 12% 12% 0% 0% / 18% 18% 0% 0%;}
+    @media(min-width:992px) and (max-width:1049px){border-radius: 14% 14% 0% 0% / 20% 20% 0% 0%;}
+    @media(min-width:790px) and (max-width:991px){border-radius: 16% 16% 0% 0% / 15% 15% 0% 0%;}
+    @media(min-width:576px) and (max-width:789px){border-radius: 16% 16% 0% 0% / 10% 10% 0% 0%;}
+    @media(min-width:400px) and (max-width:575px){border-radius: 16% 16% 0% 0% / 5% 5% 0% 0%;}
+    @media(max-width:399px){border-radius: 20% 20% 0% 0% / 5% 5% 0% 0%;}
 }
 .resp-text-align{
     justify-content: space-between;
@@ -205,9 +205,7 @@ body {
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    border: 1px solid #609822;
     border-radius: 50%;
-    font-size: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -216,181 +214,178 @@ body {
     transition: all 0.3s ease;
 }
 
-.prev {
-    left: 20px;
-    transform: rotate(180deg);
-    top: 45%;
-}
+.prev { left: 20px; }
 .next { right: 20px; }
 
-.nav-button:hover {
+.nav-button:hover, .prev_btn_2nd:hover, .next_btn_2nd:hover {
     background: rgb(98,155,34);
     background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.blog_section_2024 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+.blog-section{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-vector/hand-drawn-sports-extreme-sports-set_250484-175.jpg?w=826");
+    /* background-size: cover;
+    background-position: center; */
+    object-fit: cover;
+    z-index: 1;
+}
+.blog-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.87);
+    z-index: -1;
+}
+.slider_container_2nd {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
 }
 
-.blog_header_2024 {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 30px;
+.slider_wrapper_2nd {
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
-.blog_tag_2024 {
-background: #67B267;
-color: white;
-padding: 5px 15px;
-border-radius: 15px;
-font-size: 14px;
-}
-
-.view_all_2024 {
-color: #67B267;
-text-decoration: none;
-font-size: 14px;
-}
-
-.slider_container_2024 {
-position: relative;
-overflow: hidden;
-padding: 40px 0;
-}
-
-.slider_wrapper_2024 {
-display: flex;
-transition: transform 0.5s ease;
-}
-
-.slide_item_2024 {
-min-width: calc(33.333% - 40px);
-margin: 0 20px;
-background: white;
-border-radius: 10px;
-overflow: hidden;
-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-transition: all 0.5s ease;
-transform: scale(0.9);
-opacity: 0.8;
+.slide_item_2nd {
+    min-width: calc(33.333% - 40px);
+    margin: 0 20px;
+    border-radius: 0% 20% 0% 20% / 0% 11% 0% 11%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+    opacity: 0.8;
+    background-color: hsla(104, 38%, 80%, 0.767);
 }
 
 /* Style for the center slide */
-.slide_item_2024.active {
-transform: scale(1.1);
-opacity: 1;
-box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-z-index: 1;
+.slide_item_2nd.active {
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 1;
 }
 
-.slide_img_2024 {
-width: 100%;
-height: 200px;
-object-fit: cover;
+.slide_img_2nd img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.slide_content_2024 {
-padding: 15px;
+.slide_tag_2nd{
+    color: white;
+    padding: 4px 15px;
+    border-radius: 15px;
+    background: rgb(98,155,34);
+    background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
+}
+.read_more_2nd {
+    color: #609822;
+    text-decoration: none;
+    font-size: 14px;
+}
+.read_more_2nd img{
+    width: 5px;
+    margin: 2px 0 0 10px;
 }
 
-.slide_tag_2024 {
-background: #67B267;
-color: white;
-padding: 3px 10px;
-border-radius: 15px;
-font-size: 12px;
-display: inline-block;
-margin-bottom: 10px;
+.slider_nav_2nd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.read_time_2024 {
-color: #666;
-font-size: 12px;
-float: right;
-margin-top: 3px;
+.dots_container_2nd {
+    display: flex;
+    gap: 5px;
 }
 
-.slide_title_2024 {
-margin: 10px 0;
-font-size: 16px;
-line-height: 1.4;
+.dot_2nd {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #609822;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.slide_text_2024 {
-color: #666;
-font-size: 14px;
-line-height: 1.6;
-margin-bottom: 15px;
+.dot_2nd.active {
+    background: #ddd;
+    transform: scale(1.2);
 }
 
-.read_more_2024 {
-color: #67B267;
-text-decoration: none;
-font-size: 14px;
+.nav_buttons_2nd {
+    display: flex;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
 }
 
-.slider_nav_2024 {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 20px;
+.prev_btn_2nd, .next_btn_2nd {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* discover section */
+.elemant-t{
+    position: relative;
 }
 
-.dots_container_2024 {
-display: flex;
-gap: 5px;
+.elemant-t::before {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 24px;
+    width: 2px;
+    height: 70px;
+    padding: 15px 0 15px 0;
+    background: #ccc;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    @media(max-width:403px){height: 61px; bottom: 88px;}
+    @media(min-width:404px) and (max-width:767px){height: 47px;}
+    @media(min-width:768px) and (max-width:991px){bottom: 89px; height: 60px;}
+    @media(min-width:992px) and (max-width:1199px){bottom: 64px;}
 }
-
-.dot_2024 {
-width: 8px;
-height: 8px;
-border-radius: 50%;
-background: #ddd;
-cursor: pointer;
-transition: all 0.3s ease;
+/* cts section  */
+.cta{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/illustration-batsman-cricket-game-watercolor-background-banner-ai-generated_852336-9558.jpg?w=826");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
-
-.dot_2024.active {
-background: #67B267;
-transform: scale(1.2);
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.87);
+    z-index: -1;
 }
-
-.nav_buttons_2024 {
-display: flex;
-gap: 10px;
+.bg-color{
+    background-color: #54851c63;
 }
-
-.prev_btn_2024, .next_btn_2024 {
-background: white;
-border: 1px solid #ddd;
-border-radius: 50%;
-width: 40px;
-height: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-font-size: 20px;
-transition: all 0.3s ease;
+.cta-btn .bg-temp:hover{
+    color: #ffffff;
+    background: rgb(33,164,80);
+    background: linear-gradient(90deg, rgba(33,164,80,1) 0%, rgba(29,78,12,1) 100%);
 }
-
-.prev_btn_2024:hover, .next_btn_2024:hover {
-background: #67B267;
-color: white;
-border-color: #67B267;
+.cta-btn .border-pry:hover{
+    color: #ffffff;
+    background: rgb(98,155,34);
+    background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
 }
