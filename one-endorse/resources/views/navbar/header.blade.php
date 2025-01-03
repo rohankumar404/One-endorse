@@ -3,7 +3,7 @@
         <div class="container">
             <!-- Logo Section -->
             <div class="logo w-30">
-                <a>
+                <a href="/">
                     <img src="" alt="Logo" />
                 </a>
             </div>
@@ -17,19 +17,19 @@
             <div class="collapse navbar-collapse d-flex align-items-center" id="navbarDark">
                 <ul class="navbar-nav justify-content-between p-0 mb-2 mb-xl-0 fs-5 p-2 text-center w-70">
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary uppercase" href="#">Main</a>
+                        <a class="nav-link menus shadow-buttom btn-secondary uppercase" href="/">Main</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary uppercase" href="#">About</a>
+                        <a class="nav-link menus shadow-buttom btn-secondary uppercase" href="/about">About</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary uppercase" href="#">Contacts</a>
+                        <a class="nav-link menus shadow-buttom btn-secondary uppercase" href="/contact">Contacts</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary uppercase" href="#">Blog</a>
+                        <a class="nav-link menus shadow-buttom btn-secondary uppercase" href="/blogs">Blog</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link menus btn-secondary uppercase" href="#">FAQs</a>
+                        <a class="nav-link menus shadow-buttom btn-secondary uppercase" href="/faqs">FAQs</a>
                     </li>
                 </ul>
 

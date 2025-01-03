@@ -132,6 +132,9 @@ body {
 .rounded-adv-us-frem, .rounded-adv-us img{
     border-radius: 20px 20px 20px 52% / 20px 20px 20px 77% !important;
 }
+
+
+/* image gallery section  */
 .img-gallery{
     position: relative;
     background-image: url("/assets/img/s-bg/2656.jpg");
@@ -221,6 +224,9 @@ body {
     background: rgb(98,155,34);
     background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
 }
+
+
+/* blog section  */
 .blog-section{
     position: relative;
     background-image: url("https://img.freepik.com/premium-vector/hand-drawn-sports-extreme-sports-set_250484-175.jpg?w=826");
@@ -252,7 +258,7 @@ body {
 
 .slide_item_2nd {
     min-width: calc(33.333% - 40px);
-    margin: 0 20px;
+    margin: 0 15px;
     border-radius: 0% 20% 0% 20% / 0% 11% 0% 11%;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -268,25 +274,27 @@ body {
     z-index: 1;
 }
 
-.slide_img_2nd img{
+.slide_img_2nd img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.slide_tag_2nd{
+.slide_tag_2nd {
     color: white;
     padding: 4px 15px;
     border-radius: 15px;
     background: rgb(98,155,34);
     background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
 }
+
 .read_more_2nd {
     color: #609822;
     text-decoration: none;
     font-size: 14px;
 }
-.read_more_2nd img{
+
+.read_more_2nd img {
     width: 5px;
     margin: 2px 0 0 10px;
 }
@@ -320,7 +328,6 @@ body {
 .nav_buttons_2nd {
     display: flex;
     gap: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
@@ -337,6 +344,49 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+/* Container and wrapper styles */
+.slider_container_2nd {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider_wrapper_2nd {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.slide_item_2nd {
+    flex: 0 0 100%;
+    max-width: 100%;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    .slide_item_2nd {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (max-width: 767px) {
+    .slide_item_2nd {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .slide_item_2nd.active {
+        transform: none;
+        opacity: 1;
+    }
+    /* Ensure smooth sliding on mobile */
+    .slider_wrapper_2nd {
+        will-change: transform;
+    }
+}
 /* discover section */
 .elemant-t{
     position: relative;
@@ -345,25 +395,25 @@ body {
 .elemant-t::before {
     content: '';
     position: absolute;
-    bottom: 70px;
+    bottom: 35px;
     left: 24px;
     width: 2px;
-    height: 70px;
+    height: 85px;
     padding: 15px 0 15px 0;
     background: #ccc;
     border-radius: 5px;
     transform: translateY(-50%);
     @media(max-width:403px){height: 61px; bottom: 88px;}
     @media(min-width:404px) and (max-width:767px){height: 47px;}
-    @media(min-width:768px) and (max-width:991px){bottom: 89px; height: 60px;}
-    @media(min-width:992px) and (max-width:1199px){bottom: 64px;}
+    @media(min-width:768px) and (max-width:991px){bottom: 66px; height: 54px;}
+    @media(min-width:992px) and (max-width:1199px){bottom: 37px; height: 75px;}
 }
 /* cts section  */
 .cta{
     position: relative;
-    background-image: url("https://img.freepik.com/premium-photo/illustration-batsman-cricket-game-watercolor-background-banner-ai-generated_852336-9558.jpg?w=826");
-    object-fit: cover;
-    background-repeat: no-repeat;
+    background-image: url("https://img.freepik.com/premium-photo/soccer-ball-flight-against-stunning-backdrop-colorful-watercolor-splashes-generative-ai_58409-76077.jpg?w=826");
+    background-size: cover;
+    background-position: center;
     z-index: 1;
 }
 .cta:before {

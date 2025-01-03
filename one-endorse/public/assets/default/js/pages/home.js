@@ -128,21 +128,22 @@ $(document).ready(function() {
                 readTime: "8 min read"
             }
         ],
-        currentSlide: 0,
+        currentSlide: 1, // Changed to start from second slide
         autoSlideInterval: null,
+        isMobile: window.innerWidth < 768,
 
         init: function() {
             this.createSlides();
             this.createDots();
             this.bindEvents();
             this.startAutoSlide();
-            this.updateActiveSlide(0);
+            this.updateActiveSlide(this.currentSlide); // Start from second slide
         },
 
         createSlides: function() {
             this.posts.forEach((post, index) => {
                 $('#sliderWrapper2nd').append(`
-                    <div class="slide_item_2nd pb-25 ${index === 0 ? 'active' : ''}">
+                    <div class="slide_item_2nd pb-25 ${index === 1 ? 'active' : ''}">
                         <img src="${post.image}" alt="${post.title}" class="slide_img_2nd">
                         <div class="p-4">
                             <span class="slide_tag_2nd font-14">${post.tag}</span>
@@ -159,7 +160,7 @@ $(document).ready(function() {
         createDots: function() {
             this.posts.forEach((_, index) => {
                 $('#dotsContainer2nd').append(`
-                    <div class="dot_2nd ${index === 0 ? 'active' : ''}" data-index="${index}"></div>
+                    <div class="dot_2nd ${index === 1 ? 'active' : ''}" data-index="${index}"></div>
                 `);
             });
         },
@@ -168,12 +169,22 @@ $(document).ready(function() {
             $('.slide_item_2nd').removeClass('active');
             $('.slide_item_2nd').eq(index).addClass('active');
 
-            // Center the active slide
             const slideWidth = $('.slide_item_2nd').outerWidth(true);
-            const containerWidth = $('#sliderContainer2nd').width();
-            const offset = (containerWidth / 2) - (slideWidth / 2) - (slideWidth * index);
+            let offset;
 
-            $('#sliderWrapper2nd').css('transform', `translateX(${offset}px)`);
+            if (!this.isMobile) {
+                // Desktop view - center the active slide
+                const containerWidth = $('#sliderContainer2nd').width();
+                offset = (containerWidth / 2) - (slideWidth / 2) - (slideWidth * index);
+            } else {
+                // Mobile view - simple slide transition
+                offset = -slideWidth * index;
+            }
+
+            $('#sliderWrapper2nd').css({
+                'transform': `translateX(${offset}px)`,
+                'transition': 'transform 0.3s ease'
+            });
         },
 
         goToSlide: function(index) {
@@ -201,16 +212,55 @@ $(document).ready(function() {
         },
 
         bindEvents: function() {
-            $('#nextBtn2nd').click(() => this.nextSlide());
-            $('#prevBtn2nd').click(() => this.prevSlide());
+            $('#nextBtn2nd').click(() => {
+                this.stopAutoSlide();
+                this.nextSlide();
+                this.startAutoSlide();
+            });
+            
+            $('#prevBtn2nd').click(() => {
+                this.stopAutoSlide();
+                this.prevSlide();
+                this.startAutoSlide();
+            });
+
             $('.dot_2nd').click(function() {
+                blogSlider2nd.stopAutoSlide();
                 blogSlider2nd.goToSlide($(this).data('index'));
+                blogSlider2nd.startAutoSlide();
             });
 
             $('#sliderContainer2nd').hover(
                 () => this.stopAutoSlide(),
                 () => this.startAutoSlide()
             );
+
+            // Handle window resize
+            $(window).resize(() => {
+                this.isMobile = window.innerWidth < 768;
+                this.updateActiveSlide(this.currentSlide);
+            });
+
+            // Add touch support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            $('#sliderContainer2nd').on('touchstart', (e) => {
+                touchStartX = e.touches[0].clientX;
+            });
+
+            $('#sliderContainer2nd').on('touchend', (e) => {
+                touchEndX = e.changedTouches[0].clientX;
+                const diff = touchStartX - touchEndX;
+
+                if (Math.abs(diff) > 50) { // Minimum swipe distance
+                    if (diff > 0) {
+                        this.nextSlide();
+                    } else {
+                        this.prevSlide();
+                    }
+                }
+            });
         }
     };
 
