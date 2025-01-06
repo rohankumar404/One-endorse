@@ -407,6 +407,16 @@ ul li a{
   background: rgb(98,155,34);
   background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
 }
+[type=checkbox]{
+  color: rgb(98,155,34) !important;
+  color: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%) !important;
+}
+[type=text]:focus,[type=email]:focus,.form-control:focus,[type=checkbox]:focus{
+  border-color:rgb(98,155,34) !important;
+  --tw-ring-color: rgb(98,155,34) !important;
+  ---tw-ring-shadow: rgba(161, 224, 129, 0.123) 0px 6px 24px 0px, rgba(148, 231, 141, 0.13) 0px 0px 0px 1px !important;
+  box-shadow:rgba(161, 224, 129, 0.123) 0px 6px 24px 0px, rgba(148, 231, 141, 0.13) 0px 0px 0px 1px !important;
+}
 .bg-gray{
   background-color: #e7e7e7 !important;
 }
