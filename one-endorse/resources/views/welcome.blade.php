@@ -235,7 +235,7 @@
                     <h1 class="font-34 text-800 mt-2">The Latest Industry News</h1>
                     <p class="font-20 text-500">Stay informed with our expert analysis and insights.</p>
                 </div>
-                <a href="#" class="border-pry rounded-sm p-2  sdry-hover text-decoration-none text-black font-14">View All</a>
+                <a href="#" class="border-pry rounded-ex-sm p-2  sdry-hover text-decoration-none text-black font-14">View All</a>
             </div>
 
             <div class="slider_container_2nd" id="sliderContainer2nd">

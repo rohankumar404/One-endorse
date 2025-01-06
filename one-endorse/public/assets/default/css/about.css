@@ -1,0 +1,94 @@
+.hero-section{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/illustration-sport-sport-background-sport-banner_1029679-71166.jpg?w=826");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.hero-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(105, 100%, 99%, 0.87);
+    z-index: -1;
+}
+.elemants-t{
+    position: relative;
+}
+
+.elemants-t::before {
+    content: '';
+    position: absolute;
+    bottom: 75px;
+    left: 24px;
+    width: 2px;
+    height: 78px;
+    padding: 15px 0 15px 0;
+    background: #ccc;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    @media(max-width:403px){height: 61px; bottom: 88px;}
+    @media(min-width:404px) and (max-width:767px){height: 47px;}
+    @media(min-width:768px) and (max-width:991px){bottom: 66px; height: 54px;}
+    @media(min-width:992px) and (max-width:1199px){bottom: 37px; height: 75px;}
+}
+ /* our vision section */
+
+.our-vision{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/baseball-sports-fitness-fast-run-sport-player-running-outdoor-field-game-training-workout-exercise-young-athlete-with-focus-freedom-from-runner-speed-sun_590464-158198.jpg?w=826");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.our-vision:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.918);
+    z-index: -1;
+}
+
+/* our team  */
+.out-team{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/american-football-player-against-rugby-goal-post-sunny-day-stadium_1134-46045.jpg?w=996");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.out-team:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffef;
+    z-index: -1;
+}
+.team-card {
+    position: relative;
+}
+
+.team-img {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 20;
+}
+
+.badge img {
+    width: 160px;
+    height: auto;
+}
