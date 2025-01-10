@@ -178,7 +178,7 @@
                         <h3 class="font-46 text-900">Unlock the Power of Possibilities</h3>
                         <p class="font-18 text-normal">Experience our service and elevate your journey to new heights.</p>
                     </div>
-                    <div class="get-started rounded-adv bg-white p-2">
+                    <div class="get-started rounded-ex-adv bg-white p-12 my-3 my-md-0">
                         <button class="w-100 text-start">Get started</button>
                     </div>
                 </div>
