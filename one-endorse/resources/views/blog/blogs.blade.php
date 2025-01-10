@@ -5,9 +5,9 @@
 <section class="blog-hero py-80">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-9">
                 <span class="section-tag">Blog</span>
-                <h1 class="font-55 text-800 mt-3">
+                <h1 class="font-55 text-900 mt-3">
                     Explore, Engage, Evolve:
                     <span class="d-block">Unveiling Insights and Inspiration</span>
                     <span class="d-block">in Every Blog Post.</span>
