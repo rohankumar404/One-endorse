@@ -278,3 +278,30 @@
     background-color: rgba(255, 255, 255, 0.918);
     z-index: -1;
 }
+
+/* Unlock the Power  */
+.unlock-the-power{
+    position: relative;
+    background-image: url("/assets/img/s-bg/548127.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.unlock-the-power::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.329);
+    z-index: -1;
+    border-radius: 25px;
+}
+.sec-cont {
+    min-height: 100%;
+}
+.sec-img img{
+    border-radius: 20px;
+    width: 100%;
+}

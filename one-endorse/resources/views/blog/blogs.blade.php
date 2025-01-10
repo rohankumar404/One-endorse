@@ -168,3 +168,26 @@
         </div>
     </div>
 </section>
+<!-- Unlock the Power of Possibilities  -->
+<section class="bg-white py-80">
+    <div class="container unlock-the-power rounded-ex-adv">
+        <div class="row p-5">
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="sec-cont d-flex flex-column justify-content-between">
+                    <div class="text-conten text-white">
+                        <h3 class="font-46 text-900">Unlock the Power of Possibilities</h3>
+                        <p class="font-18 text-normal">Experience our service and elevate your journey to new heights.</p>
+                    </div>
+                    <div class="get-started rounded-adv bg-white p-2">
+                        <button class="w-100 text-start">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="sec-img rounded-adv">
+                    <img src="https://img.freepik.com/premium-photo/trophy-winning-award-sport-success-achievement-cup_488220-4860.jpg?w=740" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
