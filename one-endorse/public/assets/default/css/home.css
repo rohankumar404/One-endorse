@@ -1,6 +1,6 @@
 body {
     position: relative;
-    top: 75px;
+    top: 72px;
     z-index: 10;
 }
 
@@ -24,6 +24,14 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(2px);
     z-index: -1;
+}
+.hero-section-img img{
+    @media(min-width:992px){max-width: 70%;}
+    @media(min-width:768px) and (max-width:991px){max-width: 100%;}
+    @media(max-width:767px){max-width: 60%;}
+}
+.hero-section-img{
+    @media(max-width:767px){ display: flex; align-items: center;}
 }
 .conpanies-ww{
     position: relative;
@@ -265,6 +273,7 @@ body {
     transform: scale(0.9);
     opacity: 0.8;
     background-color: hsla(104, 38%, 80%, 0.767);
+    @media(max-width: 767px){margin: 0;}
 }
 
 /* Style for the center slide */
@@ -403,8 +412,9 @@ body {
     background: #ccc;
     border-radius: 5px;
     transform: translateY(-50%);
-    @media(max-width:403px){height: 61px; bottom: 88px;}
-    @media(min-width:404px) and (max-width:767px){height: 47px;}
+    @media(max-width:403px){height: 63px; bottom: 63px;}
+    @media(min-width:404px) and (max-width:707px){bottom: 46px; height: 48px;}
+    @media(min-width:707px) and (max-width:767px){bottom: 32px; height: 25px;}
     @media(min-width:768px) and (max-width:991px){bottom: 66px; height: 54px;}
     @media(min-width:992px) and (max-width:1199px){bottom: 37px; height: 75px;}
 }

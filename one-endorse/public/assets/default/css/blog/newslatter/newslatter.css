@@ -1,0 +1,56 @@
+.newsletter-section {
+    background-color: #ffffff;
+}
+
+.newsletter-form .form-control {
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    padding: 0 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form .btn {
+    height: 50px;
+    min-width: 120px;
+    font-weight: 600;
+}
+
+/* Custom styles for the rounded pill input */
+.form-control.rounded-pill {
+    border-radius: 25px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
+    }
+
+    .newsletter-section h2 {
+        font-size: 28px !important;
+    }
+}
+
+/* Optional: Animation */
+.newsletter-form .form-control, 
+.newsletter-form .btn {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);        
+    }
+}
+

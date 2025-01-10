@@ -1,10 +1,10 @@
 <header class="py-2 position-fixed top-0 w-100">
     <nav class="navbar navbar-expand-xl">
-        <div class="container">
+        <div class="container tab-rest">
             <!-- Logo Section -->
             <div class="logo w-30">
                 <a href="/">
-                    <img src="" alt="Logo" />
+                    <img src="../assets/img/images/logo.png" alt="Logo" style="width: 80px;" />
                 </a>
             </div>
 
@@ -36,11 +36,11 @@
                 <!-- Authentication Buttons -->
                 <div class="auth-buttons w-30">
                     <ul class="navbar-nav d-flex justify-content-end">
-                        <li class="nav-item menus btn-primary border-0 me-3">
-                            <a href="{{ route('login') }}" class="uppercase btn-signin">Sign In</a>
+                        <li class="nav-item border-0 me-3">
+                            <a href="{{ route('login') }}" class="nav-link uppercase btn-primary menus btn-signin">Sign In</a>
                         </li>
-                        <li class="nav-item menus btn-primary border-0">
-                            <a href="{{ route('register') }}" class="uppercase btn-signup">Sign Up</a>
+                        <li class="nav-item border-0">
+                            <a href="{{ route('register') }}" class="nav-link uppercase btn-primary menus btn-signup">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -63,22 +63,34 @@
 
 <!-- CSS -->
 <style>
-    /* Default navbar styles */
+    @media(min-width: 992px) and (max-width:1199px){
+        .tab-rest{
+            flex-wrap: nowrap !important;
+        }
+        .logo{
+            max-width: 16% !important;
+        }
+        .auth-buttons{
+        margin-bottom: 9px;
+        }
+
+    }
     .collapse {
         transition: max-height 0.3s ease;
         overflow: hidden;
-    }
+        @media(max-width:510px){display: block !important;}
+    }    
 
     /* Large screens: Ensure the menu is always visible */
     @media (min-width: 992px) {
         .collapse {
             display: flex !important;
-            max-height: none !important; /* No height restrictions */
-            overflow: visible !important;
+            max-height: none !important;
+            overflow: visible !important;            
         }
 
         .navbar-toggler {
-            display: none; /* Hide the toggle button */
+            display: none;
         }
     }
 
@@ -97,12 +109,20 @@
         .navbar-toggler {
             display: block; /* Ensure toggle button is visible */
         }
+        .navbar-nav{
+            align-items: start;
+            padding: 0 !important;
+        }
+        .navbar-nav li{
+            min-width: 145px;
+        }
     }
 
     /* Style adjustments for better UI */
     .navbar-nav {
-        flex-direction: column; /* Stack menu items vertically for small screens */
-        gap: 10px; /* Add spacing between menu items */
+        flex-direction: column;
+        gap: 10px;
+        @media(min-width: 992px) and (max-width:1199px){flex-direction: row !important;}
     }
 
     .navbar-nav li {

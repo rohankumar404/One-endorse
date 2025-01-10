@@ -1,9 +1,10 @@
 @extends('layouts.app')
-<section>
-    <div class="home-banner-img">
-        <div class="container h-100 d-flex">
+<link rel="stylesheet" href="{{ asset('assets/default/css/home.css') }}">
+<section class="home-banner-img py-80">
+    <!-- <div> -->
+        <div class="container">
             <div class="row">
-                <div class="d-flex hero-section-content align-items-center flex-wrap">
+                <!-- <div class="d-flex hero-section-content align-items-center flex-wrap"> -->
                     <div class="col-12 col-md-6">                        
                         <div class="d-flex flex-column">
                             <div>
@@ -19,14 +20,14 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="hero-section-img d-flex justify-content-end">
-                            <img class="w-80 box-shadow-32 rounded-4" src="https://img.freepik.com/premium-photo/sports-abstract-collage_23-2151203862.jpg?w=740" alt="">
+                        <div class="hero-section-img d-flex justify-content-md-end justify-content-center">
+                            <img class="box-shadow-32 rounded-4" src="https://img.freepik.com/premium-photo/sports-abstract-collage_23-2151203862.jpg?w=740" alt="">
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </section>
 <section class="conpanies-ww py-80">
     <div class="container">
@@ -147,7 +148,7 @@
     </div>
 </section>
 <section class="recent-campaigns">
-    <div class="section-bg bg-dark py-80">
+    <div class="section-bg bg-black py-80">
         <div class="container">
             <div class="row">
                 <div class="col-12 pb-20 border-bottom-gray d-flex flex-wrap resp-text-align align-items-center">
@@ -155,7 +156,7 @@
                     <p class="text-secondary m-0 text-white font-16">All in One Place</p>
                 </div>
             </div>
-            <div class="row d-flex py-30">
+            <div class="row d-flex justify-content-center py-30">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-20">
                     <div class="r-compaigns-card bg-white p-3 box-shadow-16 rounded-adv">
                         <div class="r-card-head border-bottom-black d-flex justify-content-between">
@@ -265,8 +266,8 @@
                     <span class="section-tag text-white">Discover</span>
                     <h3 class="font-34 text-800 text-white mt-3">Find Your Perfect <br> Collaborator</h3>
                 </div>
-                <div class="sign-btn">
-                    <button class="border-pry btn-rounded border-0 p-hover bg-temp text-white mt-3">Sign Up</button>
+                <div class="sign-btn ">
+                    <button class="border-pry btn-rounded border-0 p-hover bg-temp text-white mt-3"><a href="{{ route('register') }}">Sign Up</a></button>
                 </div>
                 <div class="p-4">
                     <img src="../assets/img/icon/elements/Layer_1.png" alt="elements">
@@ -285,10 +286,10 @@
                     </div>
                 </div>
                 <div class="d-flex">
-                    <div class="col-2 elemant-t">
+                    <div class="col-2 elemant-t pt-4 pt-md-0">
                         <img src="../assets/img/icon/elements/Relume.png" alt="elements">
                     </div>
-                    <div class=" col-10 discover-content d-flex justify-content-between">
+                    <div class=" col-10 discover-content d-flex justify-content-between pt-4 pt-md-0">
                         <div class="d-cont text-white pl-20">
                             <h4 class="font-24 text-600">How It Works</h4>
                             <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
@@ -296,10 +297,10 @@
                     </div>
                 </div>
                 <div class="d-flex">
-                    <div class="col-2 elemant-t">
+                    <div class="col-2 elemant-t pt-4 pt-md-0">
                         <img src="../assets/img/icon/elements/Relume.png" alt="elements">
                     </div>
-                    <div class=" col-10 discover-content d-flex justify-content-between">
+                    <div class=" col-10 discover-content d-flex justify-content-between pt-4 pt-md-0">
                         <div class="d-cont text-white pl-20">
                             <h4 class="font-24 text-600">How It Works</h4>
                             <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
@@ -307,10 +308,10 @@
                     </div>
                 </div>
                 <div class="d-flex">
-                    <div class="col-2 elemant-t">
+                    <div class="col-2 elemant-t pt-4 pt-md-0">
                         <img src="../assets/img/icon/elements/Relume.png" alt="elements">
                     </div>
-                    <div class=" col-10 discover-content d-flex justify-content-between">
+                    <div class=" col-10 discover-content d-flex justify-content-between pt-4 pt-md-0">
                         <div class="d-cont text-white pl-20">
                             <h4 class="font-24 text-600">How It Works</h4>
                             <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
@@ -330,7 +331,7 @@
                         <h3 class="font-34 text-800">Ready to try it out?</h3>
                         <p class="font-14 text-normal">Sign up now and get 50% off your first month of using our product.</p>
                         <div class="cta-btn d-flex justify-content-center gap-2 mt-3">
-                            <button class="border-pry btn-rounded border-0 p-hover bg-temp text-white font-14">Sign up</button>
+                            <button class="border-pry btn-rounded border-0 p-hover bg-temp text-white font-14"><a href="{{ route('register') }}">Sign Up</a></button>
                             <button class="border-btn btn-rounded sdry-hover text-black font-14">Learn more</button>
                         </div>
                     </div>

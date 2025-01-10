@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="{{ asset('assets/default/css/contact.css') }}">
 <section class="py-50 bg-white">
     <div class="bg-color-section rounded-ex-adv">
         <div class="container p-4">
@@ -30,10 +31,18 @@
                                     <p class="error-message">{{ $message }}</p>
                                 @enderror
                             </div>
+
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label font-18 text-700">Phone Number</label>
+                                <input type="text" class="form-control rounded-sm" id="phoneNumber" name="phone_number" placeholder="Enter phone number..." value="{{ old('phone_number') }}">
+                                @error('phone_number')
+                                    <p class="error-message">{{ $message }}</p>
+                                @enderror
+                            </div>
                 
                             <div class="mb-3">
                                 <label for="message" class="form-label font-18 text-700">Message</label>
-                                <textarea class="form-control rounded-sm" id="message" name="message" rows="5" placeholder="Type your message..." required>{{ old('message') }}</textarea>
+                                <textarea class="form-control rounded-sm" id="message" name="message" rows="4" placeholder="Type your message..." required>{{ old('message') }}</textarea>
                                 @error('message')
                                     <p class="error-message">{{ $message }}</p>
                                 @enderror

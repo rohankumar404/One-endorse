@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\blog\NewsLatter\NewsLatterController;
+use App\Http\Controllers\blog\BlogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
@@ -9,7 +10,7 @@ Route::get('/', function () {
 });
 Route::view('/about','pages.about');
 Route::view('/contact','pages.contact');
-Route::view('/blogs','pages.blogs');
+Route::view('/blogs','blog.blogs');
 Route::view('/faqs','pages.faqs');
 
 Route::get('/dashboard', function () {
@@ -25,5 +26,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
 Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact.submit');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+Route::post('/newsletter/subscribe', [NewsLatterController::class, 'subscribe'])->name('newsletter.subscribe');
 
 require __DIR__.'/auth.php';

@@ -25,6 +25,7 @@ class ContactController extends Controller
             'full_name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'message' => 'required|string',
+            'phone_number' => 'nullable|string|max:10|regex:/^[0-9]+$/',
             'terms_accepted' => 'required|boolean',
         ]);
 
@@ -33,6 +34,7 @@ class ContactController extends Controller
         $contact->full_name = $validatedData['full_name'];
         $contact->email = $validatedData['email'];
         $contact->message = $validatedData['message'];
+        $contact->phone_number = $validatedData['phone_number']; // Save phone number
         $contact->terms_accepted = $validatedData['terms_accepted'];
         $contact->save();
 

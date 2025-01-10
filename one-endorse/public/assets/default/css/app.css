@@ -24,10 +24,10 @@
 
 }
 .btn-primary {
-  transition: all 0.3s;
-  color: #ffffff;
-  background: rgb(98,155,34);
-  background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
+  transition: all 0.3s !important;
+  color: #ffffff !important;
+  background: rgb(98,155,34) !important;
+  background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%) !important;
 }
 .btn-primary a{
   color: #fff;
@@ -252,6 +252,9 @@
   font-weight: 800;
 }
 /* padding  */
+.p-12{
+  padding: 12px !important;
+}
 .py-15{
   padding: 15px 0 15px 0 !important;
 }

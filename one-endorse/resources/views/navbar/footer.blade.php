@@ -3,7 +3,7 @@
         <div class="row py-50">
             <div class="col-12 col-md-6">
                 <div class="footer-logo">
-                    <img src="" alt="footer logo">
+                    <img src="../assets/img/images/logo.png" alt="footer logo" style="width: 80px;"/>
                 </div>
                 <div class="footer-content py-4">
                     <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ut, minus quisquam facere ipsa nemo id, magnam consequatur quaerat sequi consequuntur obcaecati unde, voluptatum laboriosam?</p>
