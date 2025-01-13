@@ -1,0 +1,89 @@
+body {
+    position: relative;
+    top: 72px;
+    z-index: 10;
+}
+/* FAQ Styles */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-toggle {
+    background: transparent;
+    border: 1px solid #000;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.faq-toggle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Active state */
+.faq-toggle.active {
+    background: #000;
+    color: #fff;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.faq-toggle.active + .faq-content {
+    background: #000;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Chevron icon */
+.chevron-icon {
+    min-width: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-toggle.active .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.faq-toggle.active .chevron-icon path {
+    stroke: #fff;
+}
+
+/* Content area */
+.faq-content {
+    display: none;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.faq-content.show {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rounded corners */
+.rounded-adv {
+    border-radius: 15px;
+}
+
+/* border section  */
+.border-line{
+    border: none !important;
+    height: 1px;
+    width: 80%;
+    background-color: #387c1b;
+    margin: 0 auto;
+    @media(max-width:991px){width: 100%;}
+}

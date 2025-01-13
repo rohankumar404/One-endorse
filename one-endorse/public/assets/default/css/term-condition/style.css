@@ -1,0 +1,53 @@
+
+body {
+    position: relative;
+    top: 72px;
+    z-index: 10;
+}
+/* Terms Navigation Styles */
+.terms-nav {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.terms-nav .nav-link {
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+blockquote{
+    border-left: solid 1px;
+}
+.terms-nav .nav-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.terms-nav .nav-link.active {
+    background: #e2e2e2;
+    color: #000;
+}
+
+/* Content Styles */
+.terms-content section {
+    scroll-margin-top: 100px;
+}
+
+blockquote {
+    background: rgba(96, 152, 34, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .terms-nav {
+        position: relative !important;
+        top: 0 !important;
+        margin-bottom: 30px;
+    }
+}
