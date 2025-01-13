@@ -3,7 +3,7 @@
 <section class="home-banner-img py-80">
     <!-- <div> -->
         <div class="container">
-            <div class="row">
+            <div class="row flex-wrap-reverse">
                 <!-- <div class="d-flex hero-section-content align-items-center flex-wrap"> -->
                     <div class="col-12 col-md-6">                        
                         <div class="d-flex flex-column">
@@ -13,7 +13,7 @@
                                 </h1>
                                 <p class="text-secondary font-18 text-white">Connect with sports athletes and agencies to create seamless and successful marketing campaigns.</p>
                             </div>
-                            <div class="btn-section d-flex justify-center-start mb-10">
+                            <div class="btn-section d-flex justify-center-start my-2">
                                 <button class="btn border-0 btn-primary me-3">Explore Brands</button>
                                 <button class="btn btn-transparent">Explore Celebrity</button>
                             </div>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3 d-none d-md-flex">
                 <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-around p-0">                    
                     <div class="c-logs border-1">
                         <img src="" alt="Trusted Companies">

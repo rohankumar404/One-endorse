@@ -143,7 +143,7 @@
 /* width lg  */
 @media(min-width:992px){
   .w-lg-50{
-    width: 50%;
+    width: 50% !important;
   }
   .w-lg-60{
     width: 60%;
@@ -164,6 +164,11 @@
 
 /* colors  */
 .text-color-primary{
+  background: linear-gradient(to right, #639B22, #32781A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-hover:hover{
   background: linear-gradient(to right, #639B22, #32781A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -420,7 +425,7 @@ ul li a{
   color: rgb(98,155,34) !important;
   color: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%) !important;
 }
-[type=text]:focus,[type=email]:focus,.form-control:focus,[type=checkbox]:focus{
+[type=text]:focus,[type=email]:focus,.form-control:focus,[type=checkbox]:focus,[type=password]:focus,.navbar-toggler:focus{
   border-color:rgb(98,155,34) !important;
   --tw-ring-color: rgb(98,155,34) !important;
   ---tw-ring-shadow: rgba(161, 224, 129, 0.123) 0px 6px 24px 0px, rgba(148, 231, 141, 0.13) 0px 0px 0px 1px !important;

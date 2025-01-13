@@ -3,16 +3,20 @@
 <section class="py-50 bg-white">
     <div class="bg-color-section rounded-ex-adv">
         <div class="container p-4">
-            <div class="row py-30">
+            <div class="row">
+                <div class="col-12 w-lg-50">
+                    <h1 class="font-34 text-800">Contact us</h1>
+                    @if(session('success'))
+                        <div class="success-message">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <p class="font-14 text-normal mt-3">Connect with us! Use the Contact Us form to reach out for any inquiries or partnership opportunities. We look forward to hearing from you!</p>
+                </div>
+            </div>
+            <div class="row py-30 flex-wrap-reverse">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="contect-form">
-                        <h1 class="font-34 text-800">Contact us</h1>
-                        @if(session('success'))
-                            <div class="success-message">
-                                {{ session('success') }}
-                            </div>
-                        @endif
-                        <p class="font-14 text-normal mt-3">Connect with us! Use the Contact Us form to reach out for any inquiries or partnership opportunities. We look forward to hearing from you!</p>
                         <form class="mt-5" action="{{ route('contact.submit') }}" method="POST">
                             @csrf
                             <div class="mb-3">
@@ -59,8 +63,9 @@
                                     @enderror
                                 </div>
                             </div>
-                
-                            <button type="submit" class="btn-rounded bg-temp p-hover text-white mt-3">Submit</button>
+                            <div class="d-flex justify-content-center d-md-block">
+                                <button type="submit" class="btn-rounded bg-temp p-hover text-white mt-3">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>

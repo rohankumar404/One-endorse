@@ -13,11 +13,11 @@
                 <div class="footer-menu">
                     <div class="navbar d-flex justify-content-md-end justify-content-center">
                         <ul class="nav-list d-flex flex-wrap justify-content-center gap-5 uppercase">
-                            <li class="nav-item"><a href="">main</a></li>
-                            <li class="nav-item"><a href="">About</a></li>
-                            <li class="nav-item"><a href="">Contacts</a></li>
-                            <li class="nav-item"><a href="">Blog</a></li>
-                            <li class="nav-item"><a href="">FAQs</a></li>
+                            <li class="nav-item text-hover"><a href="/">main</a></li>
+                            <li class="nav-item text-hover"><a href="/about">About</a></li>
+                            <li class="nav-item text-hover"><a href="/contact">Contacts</a></li>
+                            <li class="nav-item text-hover"><a href="/blogs">Blog</a></li>
+                            <li class="nav-item text-hover"><a href="/faqs">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
@@ -25,9 +25,7 @@
         </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-md-end justify-content-center border-bottom">
-                <p class="text-secondary uppercase">
-                    terms of service
-                </p>
+                <a href="/terms-condition"><p class="text-secondary uppercase text-hover">terms of service</p></a>
             </div>
         </div>
         <div class="row">

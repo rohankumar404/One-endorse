@@ -12,6 +12,7 @@ Route::view('/about','pages.about');
 Route::view('/contact','pages.contact');
 Route::view('/blogs','blog.blogs');
 Route::view('/faqs','pages.faqs');
+Route::view('/terms-condition','term-condition.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
