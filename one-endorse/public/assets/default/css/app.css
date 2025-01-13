@@ -405,7 +405,7 @@ ul li a{
 }
 /* border  */
 .border-pry{
-  border: 1px solid #609822;
+  border: 1px solid #609822 !important;
 }
 .border-bottom-black{
   border-bottom: 1px solid #000;

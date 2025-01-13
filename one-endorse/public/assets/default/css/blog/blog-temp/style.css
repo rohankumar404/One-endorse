@@ -1,0 +1,117 @@
+body {
+    position: relative;
+    top: 72px;
+    z-index: 10;
+}
+.blog-card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+.featured-card:hover, .side-card:hover, .blog-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.blog-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.card-image-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+.blog-card:hover .blog-card-img {
+    transform: scale(1.05);
+}
+.rounded-adv-top {
+    border-radius: 15px;
+}
+.read-more {
+    color: #609822;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.read-more:hover {
+    color: #32781A;
+}
+/* Blog Detail Styles */
+.blog-detail-section {
+    background: #fff;
+}
+
+.featured-image {
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-meta {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    width: 100%;
+    padding: 20px;
+}
+
+.blog-main-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.blog-paragraphs p {
+    line-height: 1.8;
+    color: #333;
+}
+
+.share-buttons .btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.share-buttons .btn:hover {
+    background: linear-gradient(to right, #639B22, #32781A);
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .featured-image {
+        height: 300px;
+    }
+
+    .blog-main-content {
+        padding: 0 15px;
+    }
+}
+
+/* Tech and Trends in Sports  */
+.teck-and-trends {
+    position: relative;
+    background-image: url("/assets/img/s-bg/22448.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.teck-and-trends::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.918);
+    z-index: -1;
+}
