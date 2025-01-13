@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        @stack('styles')
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- css link -->
@@ -20,8 +20,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         {{-- @vite(['resources/scss/app.scss', 'resources/js/app.js']) --}}
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased">        
         @include('navbar.header')
+        @yield('content')
+        @stack('scripts')
         @include('navbar.footer')
         {{-- script links  --}}
         <script src="assets/default/js/pages/home.js"></script>
