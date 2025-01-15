@@ -79,6 +79,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    background: linear-gradient(to right, #639b222c, #32781a27);
 }
 
 .share-buttons .btn:hover {

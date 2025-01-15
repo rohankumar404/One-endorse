@@ -1,3 +1,6 @@
+.collapse {
+  visibility: visible !important;
+}
 .btn{
   font-size: 16px !important;
   padding: 6px 20px !important;
