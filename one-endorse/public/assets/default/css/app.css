@@ -1,3 +1,8 @@
+body {
+  position: relative;
+  top: 72px;
+  z-index: 10;
+}
 .collapse {
   visibility: visible !important;
 }
@@ -5,7 +10,6 @@
   font-size: 16px !important;
   padding: 6px 20px !important;
   border-radius: 22px !important;
-  font-weight: 600 !important;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -157,6 +161,12 @@
 }
 /* width md*/
 @media(min-width:768px){
+  .w-md-40{
+    width: 40%;
+  }
+  .w-md-60{
+    width: 60%;
+  }
   .w-md-70{
     width: 70%;
   }
@@ -356,7 +366,7 @@ svg.w-20{
   width: 30% !important;
 }
 .w-40{
-  width: 40% !important;
+  width: 40%;
 }
 .w-50{
   width: 50% !important;
@@ -406,6 +416,12 @@ ul li a{
 .rounded-ex-adv{
   border-radius: 25px !important;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 /* border  */
 .border-pry{
   border: 1px solid #609822 !important;
@@ -437,9 +453,26 @@ ul li a{
 .bg-gray{
   background-color: #e7e7e7 !important;
 }
+.text-gray {
+  color: #6b7280;
+}
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
 /* sort-cut  */
 .section-tag {
   border: 1px solid #609822;
   padding: 2px 15px;
   border-radius: 15px;
+}
+/* resources/css/app.css */
+/* Responsive */
+@media (max-width: 768px) {
+  .register-section {
+      margin: 16px;
+  }
+  
+  .col-md-6 {
+      padding: 16px;
+  }
 }

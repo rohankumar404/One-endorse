@@ -5,6 +5,8 @@ use App\Http\Controllers\blog\BlogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
+// google auth
+use App\Http\Controllers\Auth\GoogleController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,5 +34,7 @@ Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blog-temp', [BlogTemplateController::class, 'index'])->name('blog.temp');
 Route::post('/newsletter/subscribe', [NewsLatterController::class, 'subscribe'])->name('newsletter.subscribe');
-
+// google auth
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 require __DIR__.'/auth.php';
