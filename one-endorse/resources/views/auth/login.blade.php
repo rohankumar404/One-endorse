@@ -24,19 +24,26 @@
                 <h1 class="font-24 fw-bold mb-3">Log in account</h1>
 
                 <!-- Session Status -->
-                <x-auth-session-status class="mb-4" :status="session('status')" />
+                @if (session('status'))
+                    <div class="alert alert-success mb-3">
+                        {{ session('status') }}
+                    </div>
+                @endif
 
                 <form method="POST" action="{{ route('login') }}" class="text-start">
                     @csrf
 
                     <!-- Email -->
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
                         <input type="email" 
                                name="email" 
                                placeholder="Email address"
-                               class="form-control custom-input rounded-mid" 
+                               class="form-control custom-input rounded-mid @error('email') is-invalid @enderror" 
+                               value="{{ old('email') }}"
                                required>
-                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                        @error('email')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
 
                     <!-- Password -->
@@ -44,14 +51,16 @@
                         <input type="password" 
                             name="password" 
                             placeholder="Password"
-                            class="form-control custom-input rounded-mid" 
+                            class="form-control custom-input rounded-mid @error('password') is-invalid @enderror" 
                             required>
                         <button type="button" class="password-toggle">
                             <img src="{{ asset('assets/img/icon/eye-cross.png') }}" 
                                 alt="toggle password" 
                                 class="password-toggle-img">
                         </button>
-                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                        @error('password')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
 
                     <!-- Remember Me & Forgot Password -->

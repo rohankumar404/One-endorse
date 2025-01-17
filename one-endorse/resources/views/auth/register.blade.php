@@ -29,28 +29,44 @@
                         <!-- Name Fields -->
                         <div class="row g-3 mb-3">
                             <div class="col-6">
-                                <input type="text" 
-                                       name="first_name" 
-                                       placeholder="First Name"
-                                       class="form-control custom-input rounded-mid" 
-                                       required>
+                                <div class="position-relative">
+                                    <input type="text" 
+                                           name="first_name" 
+                                           placeholder="First Name"
+                                           class="form-control custom-input rounded-mid @error('first_name') is-invalid @enderror" 
+                                           value="{{ old('first_name') }}"
+                                           required>
+                                    @error('first_name')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
                             </div>
                             <div class="col-6">
-                                <input type="text" 
-                                       name="last_name" 
-                                       placeholder="Last Name"
-                                       class="form-control custom-input rounded-mid" 
-                                       required>
+                                <div class="position-relative">
+                                    <input type="text" 
+                                           name="last_name" 
+                                           placeholder="Last Name"
+                                           class="form-control custom-input rounded-mid @error('last_name') is-invalid @enderror" 
+                                           value="{{ old('last_name') }}"
+                                           required>
+                                    @error('last_name')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
                             </div>
                         </div>
     
                         <!-- Email -->
-                        <div class="mb-3">
+                        <div class="mb-3 position-relative">
                             <input type="email" 
                                    name="email" 
                                    placeholder="name@gmail.com"
-                                   class="form-control custom-input rounded-mid" 
+                                   class="form-control custom-input rounded-mid @error('email') is-invalid @enderror" 
+                                   value="{{ old('email') }}"
                                    required>
+                            @error('email')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
     
                         <!-- Password -->
@@ -58,13 +74,16 @@
                             <input type="password" 
                                 name="password" 
                                 placeholder="Password"
-                                class="form-control custom-input rounded-mid" 
+                                class="form-control custom-input rounded-mid @error('password') is-invalid @enderror" 
                                 required>
                             <button type="button" class="password-toggle">
                                 <img src="{{ asset('assets/img/icon/eye-cross.png') }}" 
                                     alt="toggle password" 
                                     class="password-toggle-img">
                             </button>
+                            @error('password')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <!-- Confirm Password -->
@@ -72,13 +91,16 @@
                             <input type="password" 
                                 name="password_confirmation" 
                                 placeholder="Confirm Password"
-                                class="form-control custom-input rounded-mid" 
+                                class="form-control custom-input rounded-mid @error('password_confirmation') is-invalid @enderror" 
                                 required>
                             <button type="button" class="password-toggle">
                                 <img src="{{ asset('assets/img/icon/eye-cross.png') }}" 
                                     alt="toggle password" 
                                     class="password-toggle-img">
                             </button>
+                            @error('password_confirmation')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
     
                         <!-- Sign Up Button -->
