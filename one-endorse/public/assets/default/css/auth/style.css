@@ -86,3 +86,26 @@
     width: 20px;
     height: 20px;
 }
+
+/* Password toggle button styling */
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.password-toggle-img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.password-toggle:hover .password-toggle-img {
+    opacity: 0.8;
+}

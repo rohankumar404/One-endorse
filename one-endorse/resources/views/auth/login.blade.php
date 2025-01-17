@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @push('styles')
-<link rel="stylesheet" href="{{ asset('assets/default/css/auth/register-login.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/default/css/auth/style.css') }}">
 @endpush
-
+@section('content')
 <section class="py-80">
     <div class="container registerd-sec-bd rounded-ex-adv p-5">
         <div class="row justify-content-center">
@@ -42,12 +42,14 @@
                     <!-- Password -->
                     <div class="mb-4 position-relative">
                         <input type="password" 
-                               name="password" 
-                               placeholder="Password"
-                               class="form-control custom-input rounded-mid" 
-                               required>
+                            name="password" 
+                            placeholder="Password"
+                            class="form-control custom-input rounded-mid" 
+                            required>
                         <button type="button" class="password-toggle">
-                            <i class="fas fa-eye-slash text-gray-400"></i>
+                            <img src="{{ asset('assets/img/icon/eye-cross.png') }}" 
+                                alt="toggle password" 
+                                class="password-toggle-img">
                         </button>
                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>
@@ -100,3 +102,7 @@
         </div>
     </div>
 </section>
+@endsection
+@push('scripts')
+<script src="{{ asset('assets/default/js/pages/auth/script.js') }}"></script>
+@endpush
