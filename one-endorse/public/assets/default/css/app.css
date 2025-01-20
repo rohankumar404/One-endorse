@@ -186,6 +186,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.border-low-black{
+  border-color: #5f5f5f;
+}
 /* font size  */
 .font-12{
   font-size: 12px;
