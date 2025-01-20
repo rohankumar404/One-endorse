@@ -346,6 +346,12 @@ body {
   padding: 80px 0 80px 0 !important;
 }
 /* margin  */
+.mr-5{
+  margin-right: 5px;
+}
+.mr-10{
+  margin-right: 10px;
+}
 .mb-10{
   margin-bottom: 10px;
 }
@@ -478,4 +484,26 @@ ul li a{
   .col-md-6 {
       padding: 16px;
   }
+}
+
+/* Global Authentication Button Style */
+.btn-auth {
+  background-color: #000;
+  color: #fff;
+  padding: 6px 20px;
+}
+
+.btn-auth:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-auth.disabled {
+  color: #000;
+  background-color: #e2e2e2;
+  cursor: not-allowed !important;
+}
+
+.btn-auth.disabled:hover {
+  background-color: #ccc;
 }

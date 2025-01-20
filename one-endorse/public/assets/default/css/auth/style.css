@@ -110,4 +110,43 @@
     opacity: 0.8;
 }
 
-/* Email-verification page  */
+/* Selection Page Specific Styles */
+.selection-btn {
+    background: #fff;
+    padding: 6px 20px;
+    color: #000;
+}
+
+.selection-btn:hover {
+    background: #e2e2e2;
+}
+
+.selection-btn.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.selection-btn .icon-white {
+    display: none;
+}
+
+.selection-btn.active .icon-black {
+    display: none;
+}
+
+.selection-btn.active .icon-white {
+    display: block;
+}
+/* Maintain existing styles */
+/* @media (max-width: 768px) {
+    .selection-content {
+        padding: 2rem 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .selection-options .d-flex {
+        justify-content: center;
+    }
+} */

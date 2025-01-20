@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\GoogleController;
 // routes for see the designs of page it will be remove letter 
 use App\Http\Controllers\Auth\EmailVerificationController;
+use App\Http\Controllers\Auth\Selection_B_C\SelectionBCController;
 
 
 Route::get('/', function () {
@@ -39,6 +40,7 @@ Route::get('/blog-temp', [BlogTemplateController::class, 'index'])->name('blog.t
 Route::post('/newsletter/subscribe', [NewsLatterController::class, 'subscribe'])->name('newsletter.subscribe');
 // routes for see the designs of page it will be remove letter 
 Route::get('/email-verification', [EmailVerificationController::class, 'index'])->name('auth.email-verification');
+Route::get('/selection', [SelectionBCController::class, 'index'])->name('auth.selection-b-c.email-verification');
 
 // google auth
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
