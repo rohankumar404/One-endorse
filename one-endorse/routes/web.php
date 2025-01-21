@@ -10,7 +10,10 @@ use App\Http\Controllers\Auth\GoogleController;
 // routes for see the designs of page it will be remove letter 
 use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\Selection_B_C\SelectionBCController;
-
+// routes for dashboard brands and celebrities 
+use App\Http\Controllers\Dashboard\BrandsController;
+use App\Http\Controllers\Dashboard\CelebritiesController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
     return view('welcome');
@@ -41,6 +44,11 @@ Route::post('/newsletter/subscribe', [NewsLatterController::class, 'subscribe'])
 // routes for see the designs of page it will be remove letter 
 Route::get('/email-verification', [EmailVerificationController::class, 'index'])->name('auth.email-verification');
 Route::get('/selection', [SelectionBCController::class, 'index'])->name('auth.selection-b-c.email-verification');
+// routes for dashboard brands and celebrities 
+Route::get('/dashboard/brands', [BrandsController::class, 'index'])->name('dashboard.brands');
+Route::get('/dashboard/celebrities', [CelebritiesController::class, 'index'])->name('dashboard.celebrities');
+// Dashboard filter 
+
 
 // google auth
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');

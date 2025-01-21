@@ -63,36 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
     selectionBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             // Remove active class from all buttons
-            selectionBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
-            this.classList.add('active');
-            // Store selected value
-            selectedValue = this.dataset.value;
-            // Enable continue button
-            continueBtn.classList.remove('disabled');
-        });
-    });
-
-    continueBtn.addEventListener('click', function() {
-        if (selectedValue) {
-            // Redirect or handle the selection
-            window.location.href = `/register/${selectedValue}`;
-        }
-    });
-});
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const selectionBtns = document.querySelectorAll('.selection-btn');
-    const continueBtn = document.getElementById('continueBtn');
-    let selectedValue = null;
-
-    selectionBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // Remove active class from all buttons
             selectionBtns.forEach(b => {
                 b.classList.remove('active');
                 // Reset all images
@@ -116,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     continueBtn.addEventListener('click', function() {
         if (selectedValue) {
             // Redirect or handle the selection
-            window.location.href = `/register/${selectedValue}`;
+            window.location.href = `/dashboard/${selectedValue}`;
         }
     });
 });

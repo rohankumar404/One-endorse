@@ -14,8 +14,8 @@
                                 <p class="text-secondary font-18 text-white">Connect with sports athletes and agencies to create seamless and successful marketing campaigns.</p>
                             </div>
                             <div class="btn-section d-flex justify-center-start my-2">
-                                <button class="btn border-0 btn-primary me-3">Explore Brands</button>
-                                <button class="btn btn-transparent">Explore Celebrity</button>
+                                <button class="btn border-0 btn-primary me-3"><a href="/dashboard/brands">Explore Brands</a></button>
+                                <button class="btn btn-transparent"><a href="/dashboard/celebrities">Explore Celebrity</a></button>
                             </div>
                         </div>
                     </div>
@@ -107,10 +107,10 @@
                     <div class="card-cnt d-flex flex-column justify-content-center m-card-p">
                         <h4 class="font-24 text-700 text-center">Find Athletes</h4>
                         <p class="font-14 text-normal text-center">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
-                        <button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center mx-auto">
+                        <a class="mt-3 mx-auto" href="#"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
                             <span class="font-12 text-normal">Click Now</span>
                             <span><svg enable-background="new 0 0 32 32" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg"><g id="Layer_1"><path d="m8.6436 30.4697c-.8063-.7441-.8574-2.0199-.1133-2.8262l10.748-11.6435-10.748-11.6436c-.7441-.8063-.693-2.082.1133-2.8262s2.082-.693 2.8262.1133l12 13c.707.7661.707 1.9468 0 2.7129l-12 13c-.7442.8063-2.02.8575-2.8262.1133z" fill="#444444"/></g></svg></span>
-                        </button>
+                        </button></a>
                     </div>
                 </div>
             </div>
@@ -122,10 +122,10 @@
                     <div class="card-cnt d-flex flex-column justify-content-center m-card-p">
                         <h4 class="font-24 text-700 text-center">Find Brand</h4>
                         <p class="font-14 text-normal text-center">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
-                        <button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center mx-auto">
+                        <a class="mt-3 mx-auto" href="#"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
                             <span class="font-12 text-normal">Click Now</span>
                             <span><svg enable-background="new 0 0 32 32" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg"><g id="Layer_1"><path d="m8.6436 30.4697c-.8063-.7441-.8574-2.0199-.1133-2.8262l10.748-11.6435-10.748-11.6436c-.7441-.8063-.693-2.082.1133-2.8262s2.082-.693 2.8262.1133l12 13c.707.7661.707 1.9468 0 2.7129l-12 13c-.7442.8063-2.02.8575-2.8262.1133z" fill="#444444"/></g></svg></span>
-                        </button>
+                        </button></a>
                     </div>
                 </div>
             </div>
@@ -137,10 +137,10 @@
                     <div class="card-cnt d-flex flex-column justify-content-center m-card-p">
                         <h4 class="font-24 text-700 text-center">Manage Campaign</h4>
                         <p class="font-14 text-normal text-center">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
-                        <button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center mx-auto">
+                        <a class="mt-3 mx-auto" href="#"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
                             <span class="font-12 text-normal">Click Now</span>
                             <span><svg enable-background="new 0 0 32 32" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg"><g id="Layer_1"><path d="m8.6436 30.4697c-.8063-.7441-.8574-2.0199-.1133-2.8262l10.748-11.6435-10.748-11.6436c-.7441-.8063-.693-2.082.1133-2.8262s2.082-.693 2.8262.1133l12 13c.707.7661.707 1.9468 0 2.7129l-12 13c-.7442.8063-2.02.8575-2.8262.1133z" fill="#444444"/></g></svg></span>
-                        </button>
+                        </button></a>
                     </div>
                 </div>
             </div>
@@ -332,7 +332,7 @@
                         <p class="font-14 text-normal">Sign up now and get 50% off your first month of using our product.</p>
                         <div class="cta-btn d-flex justify-content-center gap-2 mt-3">
                             <button class="border-pry btn-rounded border-0 p-hover bg-temp text-white font-14"><a href="{{ route('register') }}">Sign Up</a></button>
-                            <button class="border-btn btn-rounded sdry-hover text-black font-14">Learn more</button>
+                            <button class="border-btn btn-rounded sdry-hover text-black font-14"><a href="/about">Learn more</a></button>
                         </div>
                     </div>
                 </div>
