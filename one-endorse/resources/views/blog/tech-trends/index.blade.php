@@ -1,10 +1,10 @@
 <!-- resources/views/blog/tech-trends/index.blade.php -->
 <div class="col-12 col-md-6 col-lg-4">
-    <div class="blog-card bg-white box-shadow-16 rounded-adv p-12">
+    <div class="slide-card bg-white box-shadow-16 rounded-adv p-12">
         <div class="position-relative card-image-wrapper">
             <img src="{{ $techandtrends['image_url'] }}" 
                  alt="{{ $techandtrends['category'] }}" 
-                 class="w-100 rounded-adv-top blog-card-img">
+                 class="w-100 rounded-adv-top slide-card-img">
             <span class="section-tag position-absolute bg-white text-black border-0" style="bottom:15px; left:15px;">
                 {{ $techandtrends['category'] }}
             </span>

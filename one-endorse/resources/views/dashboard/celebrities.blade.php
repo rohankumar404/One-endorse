@@ -27,25 +27,25 @@
                 <button class="filter-btn d-flex align-items-center gap-2">
                     <img src="{{ asset('assets/img/icon/elements/black-Relume.png') }}" alt="Industry" class="filter-icon">
                     Brand Industry
-                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2">
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
                 </button>
 
                 <button class="filter-btn d-flex align-items-center gap-2">
                     <img src="{{ asset('assets/img/icon/elements/black-Relume.png') }}" alt="Endorsement" class="filter-icon">
                     Endorsement Type
-                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2">
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
                 </button>
 
                 <button class="filter-btn d-flex align-items-center gap-2">
                     <img src="{{ asset('assets/img/icon/elements/black-Relume.png') }}" alt="Category" class="filter-icon">
                     Available Category
-                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2">
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
                 </button>
 
                 <button class="filter-btn d-flex align-items-center gap-2">
                     <img src="{{ asset('assets/img/icon/elements/black-Relume.png') }}" alt="Cost" class="filter-icon">
                     Cost
-                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2">
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
                 </button>
             </div>
 
@@ -57,7 +57,7 @@
                         placeholder="Search">                
                 </div>
                 <div class="w-20 d-flex align-items-center justify-content-end">
-                    <button type="button" class="search-btn h-100 rounded-adv w-80">
+                    <button type="button" class="search-btn h-100 rounded-adv w-80 hover">
                         Search
                     </button>
                 </div>
@@ -124,7 +124,7 @@
 
         return new Swiper(selector, {
             slidesPerView: 1, // Default for small screens
-            spaceBetween: 20, // Default spacing
+            spaceBetween: 35, // Default spacing
             loop: true, // Infinite loop for smooth transitions
             autoplay: {
                 delay: 3000, // Delay between slides
@@ -135,12 +135,16 @@
                 clickable: true,
             },
             breakpoints: {
-                768: { // Medium screens (md)
+                400: { // Medium screens (md)
                     slidesPerView: 2,
-                    spaceBetween: 30,
+                    spaceBetween: 35,
+                },
+                768: { // Medium screens (md)
+                    slidesPerView: 3,
+                    spaceBetween: 40,
                 },
                 1024: { // Large screens (lg)
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 40,
                 },
             },

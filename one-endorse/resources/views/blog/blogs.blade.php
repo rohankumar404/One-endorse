@@ -26,7 +26,7 @@
         <div class="row g-4">
             <!-- Main Featured Post -->
             <div class="col-12 col-lg-6">
-                <div class="side-card bg-white box-shadow-16 p-12 rounded-adv h-100">
+                <div class="slide-card bg-white box-shadow-16 p-12 rounded-adv h-100">
                     <div class="position-relative">
                         <img src="https://img.freepik.com/free-photo/young-male-soccer-football-player-training-isolated-gradient-wall_155003-37551.jpg" 
                              alt="Sports Campaign" 
@@ -55,7 +55,7 @@
                 <div class="row g-4">
                     <!-- First Side Post -->
                     <div class="col-12">
-                        <div class="side-card bg-gray rounded-adv">
+                        <div class="slide-card bg-gray rounded-adv">
                             <div class="d-flex align-items-center p-12">
                                 <div class="side-img rounded-adv" style="max-width: 170px; height: 180px;">
                                     <img src="https://img.freepik.com/free-photo/young-male-soccer-football-player-training-isolated-gradient-wall_155003-37551.jpg" 
@@ -76,7 +76,7 @@
 
                     <!-- Second Side Post -->
                     <div class="col-12">
-                        <div class="side-card bg-gray rounded-adv">
+                        <div class="slide-card bg-gray rounded-adv">
                             <div class="d-flex align-items-center p-12">
                                 <div class="side-img rounded-adv" style="max-width: 170px; height: 180px;">
                                     <img src="https://img.freepik.com/free-photo/young-male-soccer-football-player-training-isolated-gradient-wall_155003-37551.jpg" 
