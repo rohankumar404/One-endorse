@@ -10,7 +10,7 @@ body {
 .blog-card:hover {
     transform: translateY(-5px);
 }
-.featured-card:hover, .side-card:hover, .blog-card:hover {
+.side-card:hover, .side-card:hover, .blog-card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .blog-card-img {
