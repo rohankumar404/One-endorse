@@ -89,3 +89,81 @@
         height: 200px;
     }
 }
+
+/* brands page  */
+/* actors celebrity section */
+.actors-celebrity-sec{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/3d-render-film-reel-strip-clipping-path-isolated-white_807584-430.jpg?w=996");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.actors-celebrity-sec:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.938);
+    z-index: -1;
+}
+/* sports celebrity section */
+.sports-celebrity-sec{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/image-showcases-diverse-athletes-running-towards-common-goal-symbolizing-teamwork-deter_924727-57774.jpg?w=826");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.sports-celebrity-sec:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.938);
+    z-index: -1;
+}
+
+/* celebrities page  */
+/* top brand section */
+.top-brands-sec{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/business-handshake-business-people-city-background_488220-10535.jpg?w=996");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.top-brands-sec:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.849);
+    z-index: -1;
+}
+/* brand section */
+.top-industries-sec{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/modern-granary-elevator-seed-cleaning-line-silver-silos-agroprocessing-manufacturing-plant-storage-processing-drying-cleaning-agricultural-products-flour-cereals-grain_97694-13028.jpg?w=996");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.top-industries-sec:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.938);
+    z-index: -1;
+}

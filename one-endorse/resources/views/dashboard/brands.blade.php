@@ -68,7 +68,7 @@
 
 
 <!-- First Slider Section -->
-<section class="slider-section py-5">
+<section class="slider-section actors-celebrity-sec py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
@@ -90,7 +90,7 @@
 </section>
 
 <!-- Second Slider Section -->
-<section class="slider-section py-5">
+<section class="slider-section sports-celebrity-sec py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>

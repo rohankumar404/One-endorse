@@ -68,11 +68,11 @@
 
 
 <!-- First Slider Section -->
-<section class="slider-section py-5">
+<section class="slider-section top-brands-sec py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
-                <h3 class="font-34 text-800">Featured Athletes</h3>
+                <h3 class="font-34 text-800">Top Brands</h3>
             </div>
             <a href="#" class="border-pry rounded-ex-sm p-2  sdry-hover text-decoration-none text-black font-12">View All</a>
         </div>
@@ -90,11 +90,11 @@
 </section>
 
 <!-- Second Slider Section -->
-<section class="slider-section py-5">
+<section class="slider-section top-industries-sec py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
-                <h3 class="font-34 text-800">Popular Sports</h3>
+                <h3 class="font-34 text-800">Top Industries</h3>
             </div>
             <a href="#" class="border-pry rounded-ex-sm p-2  sdry-hover text-decoration-none text-black font-12">View All</a>
         </div>
@@ -135,7 +135,7 @@
                 clickable: true,
             },
             breakpoints: {
-                400: { // Medium screens (md)
+                400: { // Medium screens (custom)
                     slidesPerView: 2,
                     spaceBetween: 35,
                 },

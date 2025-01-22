@@ -1,4 +1,4 @@
-<div class="slide-card box-shadow-16 rounded-normal">
+<div class="slide-card box-shadow-16 bg-white rounded-normal">
     <div class="slide-image">
         <img src="{{ $slide['image'] }}" alt="{{ $slide['title'] }}" class="img-fluid rounded-normal">
     </div>
