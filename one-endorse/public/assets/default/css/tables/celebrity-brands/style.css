@@ -1,0 +1,16 @@
+.filter-section .btn-dark {
+    background: #000;
+    border: none;
+    padding: 10px 20px;
+}
+
+.table img {
+    object-fit: cover;
+    height: 40px;
+}
+
+.btn-outline-dark {
+    border-radius: 20px;
+}
+
+/* Add more custom styles */

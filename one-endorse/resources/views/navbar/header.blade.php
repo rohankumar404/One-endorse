@@ -4,13 +4,13 @@
             <!-- Logo Section -->
             <div class="logo w-30">
                 <a href="/">
-                    <img src="../assets/img/images/logo.png" alt="Logo" style="width: 80px;" />
+                    <img src="{{ asset('assets/img/images/logo.png') }}" alt="Logo" style="width: 80px;" />
                 </a>
             </div>
 
             <!-- Navbar Toggler for Mobile -->
             <button class="navbar-toggler border-0" type="button">
-                <span class="navbar-toggler border-0"><img src="../assets/img/icon/toggel.png" alt=""></span>
+                <span class="navbar-toggler border-0"><img src="{{ asset('assets/img/icon/toggel.png') }}" alt=""></span>
             </button>
 
             <!-- Collapsible Navbar -->

@@ -14,6 +14,8 @@ use App\Http\Controllers\Auth\Selection_B_C\SelectionBCController;
 use App\Http\Controllers\Dashboard\BrandsController;
 use App\Http\Controllers\Dashboard\CelebritiesController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+// tables filter and profile
+use App\Http\Controllers\Tables\Brands\FindCelebrityController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -47,8 +49,13 @@ Route::get('/selection', [SelectionBCController::class, 'index'])->name('auth.se
 // routes for dashboard brands and celebrities 
 Route::get('/dashboard/brands', [BrandsController::class, 'index'])->name('dashboard.brands');
 Route::get('/dashboard/celebrities', [CelebritiesController::class, 'index'])->name('dashboard.celebrities');
-// Dashboard filter 
-
+// tables filter and profile
+Route::prefix('brands')->group(function () {
+    Route::get('/find-celebrity', [FindCelebrityController::class, 'index'])->name('celebrity.index');
+    Route::get('/celebrity/{id}', [FindCelebrityController::class, 'show'])->name('profile.celebrity.index');
+    Route::post('/celebrity/filter', [FindCelebrityController::class, 'filter'])->name('celebrity.filter');
+    Route::post('/celebrity/search', [FindCelebrityController::class, 'search'])->name('celebrity.search');
+});
 
 // google auth
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
