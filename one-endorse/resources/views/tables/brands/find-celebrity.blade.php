@@ -4,32 +4,76 @@
 @endpush
 @section('content')
 <div class="container py-4">
-    <!-- Filter Section -->
-    <div class="filter-section mb-4">
-        <div class="row g-3">
-            <div class="col-md">
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
-                        <i class="fas fa-map-marker-alt"></i> Location
-                    </button>
-                    <ul class="dropdown-menu w-100">
-                        @foreach($locations as $location)
-                            <li><a class="dropdown-item" href="#" data-filter="location" data-value="{{ $location }}">{{ $location }}</a></li>
-                        @endforeach
-                    </ul>
-                </div>
+       <!-- Filter Section -->
+       <div class="filter-bar rounded-3 p-3 mb-4">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div class="dropdown bg-black rounded-adv">
+                <button class="btn btn-link text-white text-decoration-none d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                    <img src="{{ asset('assets/img/icon/elements/white-Relume.png') }}" alt="Industry" class="filter-icon mr-2">Location
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach($locations as $location)
+                        <li><a class="dropdown-item" href="#" data-filter="location" data-value="{{ $location }}">{{ $location }}</a></li>
+                    @endforeach
+                </ul>
             </div>
-            
-            <!-- Repeat for other filters -->
-            <!-- Sport Category, Sport, Available Category, Cost -->
-        </div>
 
-        <!-- Search Bar -->
-        <div class="search-bar mt-3">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search celebrities...">
-                <button class="btn btn-dark" type="button">Search</button>
+            <div class="dropdown bg-black rounded-adv">
+                <button class="btn btn-link text-white text-decoration-none d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                    <img src="{{ asset('assets/img/icon/elements/white-Relume.png') }}" alt="Industry" class="filter-icon mr-2">Sport Category
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach($sportCategories as $category)
+                        <li><a class="dropdown-item" href="#" data-filter="sport_category" data-value="{{ $category }}">{{ $category }}</a></li>
+                    @endforeach
+                </ul>
             </div>
+
+            <div class="dropdown bg-black rounded-adv">
+                <button class="btn btn-link text-white text-decoration-none d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                    <img src="{{ asset('assets/img/icon/elements/white-Relume.png') }}" alt="Industry" class="filter-icon mr-2">Sport
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach($sports as $sport)
+                        <li><a class="dropdown-item" href="#" data-filter="sport" data-value="{{ $sport }}">{{ $sport }}</a></li>
+                    @endforeach
+                </ul>
+            </div>
+
+            <div class="dropdown bg-black rounded-adv">
+                <button class="btn btn-link text-white text-decoration-none d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                    <img src="{{ asset('assets/img/icon/elements/white-Relume.png') }}" alt="Industry" class="filter-icon mr-2">Available Category
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach($categories as $category)
+                        <li><a class="dropdown-item" href="#" data-filter="available_category" data-value="{{ $category }}">{{ $category }}</a></li>
+                    @endforeach
+                </ul>
+            </div>
+
+            <div class="dropdown bg-black rounded-adv">
+                <button class="btn btn-link text-white text-decoration-none d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                    <img src="{{ asset('assets/img/icon/elements/white-Relume.png') }}" alt="Industry" class="filter-icon mr-2">Cost
+                    <img src="{{ asset('assets/img/icon/drop-down-white.png') }}" alt="arrow" class="ms-2 dropdown-arrow">
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach($costs as $cost)
+                        <li><a class="dropdown-item" href="#" data-filter="cost" data-value="{{ $cost }}">{{ $cost }}</a></li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar mb-4 px-3">
+        <div class="input-group gap-3">
+            <input type="text" class="form-control rounded-ex-adv" placeholder="Search celebrities...">
+            <button class="btn bg-gray rounded-ex-adv hover px-4" type="button">Search</button>
         </div>
     </div>
 
@@ -37,7 +81,7 @@
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>
-                <tr style="background: gray;">
+                <tr>
                     <th>Name</th>
                     <th>Engagement Rate</th>
                     <th>Location</th>
@@ -50,7 +94,7 @@
                 <tr>
                     <td>
                         <div class="d-flex align-items-center">
-                            <img src="{{ $celebrity['image'] }}" class="rounded-circle me-2" width="40">
+                            <img src="{{ $celebrity['image'] }}" class="rounded-circle me-2" style="width: 40px; height: 40px;">
                             <span>{{ $celebrity['name'] }} | {{ $celebrity['gender'] }}</span>
                         </div>
                     </td>
@@ -58,7 +102,7 @@
                     <td class="pt-15">{{ $celebrity['location'] }}</td>
                     <td class="pt-15">{{ $celebrity['sport'] }}</td>
                     <td>
-                        <a href="{{ route('profile.celebrity.index', $celebrity['id']) }}" class="btn btn-outline-dark">View Profile</a>
+                        <a href="{{ route('profile.celebrity.index', $celebrity['id']) }}" class="btn hover btn-outline-dark">View Profile</a>
                     </td>
                 </tr>
                 @endforeach
@@ -68,39 +112,20 @@
 </div>
 @push('scripts')
 <script>
-$(document).ready(function() {
-    // Filter handling
-    $('.dropdown-item').click(function(e) {
-        e.preventDefault();
-        const filterType = $(this).data('filter');
-        const filterValue = $(this).data('value');
-        
-        $.ajax({
-            url: '{{ route("celebrity.filter") }}',
-            method: 'POST',
-            data: {
-                filterType: filterType,
-                filterValue: filterValue,
-                _token: '{{ csrf_token() }}'
-            },
-            success: function(response) {
-                // Update table with filtered results
-                updateTable(response.data);
-            }
-        });
-    });
-
-    // Search handling
-    let searchTimeout;
-    $('.search-bar input').on('input', function() {
-        clearTimeout(searchTimeout);
-        const searchTerm = $(this).val();
-        
-        searchTimeout = setTimeout(() => {
+    $(document).ready(function() {
+        // Filter handling
+        $('.dropdown-item').click(function(e) {
+            e.preventDefault();
+            const filterType = $(this).data('filter');
+            const filterValue = $(this).data('value');
+            const searchTerm = $('.search-bar input').val();
+            
             $.ajax({
-                url: '{{ route("celebrity.search") }}',
+                url: '{{ route("celebrity.filter") }}',
                 method: 'POST',
                 data: {
+                    filterType: filterType,
+                    filterValue: filterValue,
                     search: searchTerm,
                     _token: '{{ csrf_token() }}'
                 },
@@ -108,13 +133,62 @@ $(document).ready(function() {
                     updateTable(response.data);
                 }
             });
-        }, 500);
+        });
+    
+        // Search handling
+        let searchTimeout;
+        $('.search-bar input').on('input', function() {
+            clearTimeout(searchTimeout);
+            const searchTerm = $(this).val();
+            
+            searchTimeout = setTimeout(() => {
+                $.ajax({
+                    url: '{{ route("celebrity.search") }}',
+                    method: 'POST',
+                    data: {
+                        search: searchTerm,
+                        _token: '{{ csrf_token() }}'
+                    },
+                    success: function(response) {
+                        updateTable(response.data);
+                    }
+                });
+            }, 500);
+        });
+    
+        function updateTable(data) {
+            const tbody = $('tbody');
+            tbody.empty();
+            
+            if (data.length === 0) {
+                tbody.append(`
+                    <tr>
+                        <td colspan="5" class="text-center">No results found</td>
+                    </tr>
+                `);
+                return;
+            }
+    
+            data.forEach(celebrity => {
+                tbody.append(`
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="${celebrity.image}" class="rounded-circle me-2" width="40">
+                                <span>${celebrity.name} | ${celebrity.gender}</span>
+                            </div>
+                        </td>
+                        <td class="pt-15">${celebrity.engagement_rate}%</td>
+                        <td class="pt-15">${celebrity.location}</td>
+                        <td class="pt-15">${celebrity.sport}</td>
+                        <td>
+                            <a href="/brands/celebrity/${celebrity.id}" class="btn btn-outline-dark">View Profile</a>
+                        </td>
+                    </tr>
+                `);
+            });
+        }
     });
-});
-
-function updateTable(data) {
-    // Function to update table with new data
-}
-</script>
+    </script>
 @endpush
 @endsection

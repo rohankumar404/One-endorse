@@ -1,16 +1,23 @@
-.filter-section .btn-dark {
-    background: #000;
-    border: none;
-    padding: 10px 20px;
+.btn-link {
+    font-weight: 500;
 }
-
+.btn-link:hover {
+    color: #fff !important;
+    opacity: 0.8;
+}
 .table img {
     object-fit: cover;
-    height: 40px;
 }
-
-.btn-outline-dark {
-    border-radius: 20px;
+.dropdown-menu {
+    min-width: 200px;
 }
-
-/* Add more custom styles */
+.search-bar .form-control {
+    border-right: none;
+}
+.search-bar .btn {
+    border-left: none;
+}
+.dropdown .show .dropdown-arrow{
+    transition: 0.3s;
+    transform: rotate(180deg);
+}

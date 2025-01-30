@@ -14,8 +14,8 @@
                                 <p class="text-secondary font-18 text-white">Connect with sports athletes and agencies to create seamless and successful marketing campaigns.</p>
                             </div>
                             <div class="btn-section d-flex justify-center-start my-2">
-                                <button class="btn border-0 btn-primary me-3"><a href="/dashboard/brands">Explore Brands</a></button>
-                                <button class="btn btn-transparent"><a href="/dashboard/celebrities">Explore Celebrity</a></button>
+                                <button class="btn border-0 btn-primary me-3"><a href="/dashboard/celebrities">Explore Brands</a></button>
+                                <button class="btn btn-transparent"><a href="/dashboard/brands">Explore Celebrity</a></button>
                             </div>
                         </div>
                     </div>

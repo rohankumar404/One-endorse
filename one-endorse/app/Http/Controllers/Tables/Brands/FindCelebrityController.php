@@ -44,7 +44,7 @@ class FindCelebrityController extends Controller
                 'gender' => 'M',
                 'image' => 'https://i.pinimg.com/736x/22/8f/3b/228f3bff70d17575ef7c6373b417a13e.jpg',
                 'engagement_rate' => '11.12',
-                'location' => 'Mumbai, Mahrastra, India',
+                'location' => 'Mumbai',
                 'sport' => 'Cricket',
                 'profile' => [
                     'age' => 36,
@@ -73,12 +73,20 @@ class FindCelebrityController extends Controller
     public function index()
     {
         $celebrities = $this->getCelebrityData();
-        $locations = ['Ranchi', 'Rohtak', 'Hyderabad'];
-        $sports = ['Cricket', 'Wrestler', 'Karate'];
-        $categories = ['Professional', 'Amateur', 'Olympic'];
+        $locations = ['Ranchi', 'Mumbai', 'Hyderabad'];
+        $sportCategories = ['Team Sports', 'Individual Sports', 'Olympic Sports'];
+        $sports = ['Cricket', 'Wrestling', 'Karate', 'Football', 'Basketball'];
+        $categories = ['Professional', 'Amateur', 'Olympic', 'National'];
         $costs = ['0-50L', '50L-1Cr', '1Cr-5Cr', '5Cr+'];
 
-        return view('tables.brands.find-celebrity', compact('celebrities', 'locations', 'sports', 'categories', 'costs'));
+        return view('tables.brands.find-celebrity', compact(
+            'celebrities',
+            'locations',
+            'sportCategories',
+            'sports',
+            'categories',
+            'costs'
+        ));
     }
 
     public function show($id)
@@ -100,9 +108,33 @@ class FindCelebrityController extends Controller
         $celebrities = $this->getCelebrityData();
         $filterType = $request->input('filterType');
         $filterValue = $request->input('filterValue');
+        $searchTerm = strtolower($request->input('search', ''));
 
-        $filteredResults = collect($celebrities)->filter(function($celebrity) use ($filterType, $filterValue) {
-            return strtolower($celebrity[$filterType]) === strtolower($filterValue);
+        $filteredResults = collect($celebrities)->filter(function($celebrity) use ($filterType, $filterValue, $searchTerm) {
+            // Apply search if exists
+            if ($searchTerm) {
+                $matchesSearch = 
+                    str_contains(strtolower($celebrity['name']), $searchTerm) ||
+                    str_contains(strtolower($celebrity['location']), $searchTerm) ||
+                    str_contains(strtolower($celebrity['sport']), $searchTerm);
+                
+                if (!$matchesSearch) {
+                    return false;
+                }
+            }
+
+            // Apply filter if exists
+            if ($filterType && $filterValue) {
+                switch ($filterType) {
+                    case 'location':
+                        return str_contains(strtolower($celebrity['location']), strtolower($filterValue));
+                    case 'sport':
+                        return strtolower($celebrity['sport']) === strtolower($filterValue);
+                    // Add more cases for other filter types
+                }
+            }
+
+            return true;
         })->values()->all();
 
         return response()->json(['data' => $filteredResults]);
