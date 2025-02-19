@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         @stack('styles')
-        <title>{{ config('app.name', 'Laravel') }}</title>
-
+        <link rel="icon" type="image/png" href="{{ asset('assets/img/images/logo.png') }}">
+        <title>@yield('title', 'One Endorse')</title>
         <!-- css link -->
         <link rel="stylesheet" href="{{ asset('assets/default/css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/default/css/header.css') }}">

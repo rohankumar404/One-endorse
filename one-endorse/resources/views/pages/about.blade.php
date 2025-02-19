@@ -1,5 +1,6 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('assets/default/css/about.css') }}">
+@section('title', 'One Endorse - About us Page')
 <section class="hero-section py-80">
     <div class="container">
         <div class="row pt-4">

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('assets/default/css/contact.css') }}">
+@section('title', 'One Endorse - Contact us Page')
 <section class="py-50 bg-white">
     <div class="bg-color-section rounded-ex-adv">
         <div class="container p-4">

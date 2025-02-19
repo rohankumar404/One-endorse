@@ -431,6 +431,9 @@ ul li a{
 .rounded-3xl {
   border-radius: 1.5rem;
 }
+.rounded-card-tag{
+  border-radius: 20px 0% 0% 20px / 20px 0% 0% 20px;
+}
 /* border  */
 .border-pry{
   border: 1px solid #609822 !important;

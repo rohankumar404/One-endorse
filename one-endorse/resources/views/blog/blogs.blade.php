@@ -1,6 +1,6 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('assets/default/css/blog/blog.css') }}">
-
+@section('title', 'One Endorse - Blog Page')
 <!-- Hero Section -->
 <section class="blog-hero py-80">
     <div class="container">

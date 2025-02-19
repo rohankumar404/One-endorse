@@ -2,6 +2,7 @@
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/default/css/faq.css') }}">
 @endpush
+@section('title', 'One Endorse - Faq Page')
 @section('content')
 <section class="faq-hero pt-80">
     <div class="container">

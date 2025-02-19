@@ -1,11 +1,12 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('assets/default/css/home.css') }}">
+@section('title', 'One Endorse - Home Page')
 <section class="home-banner-img py-80">
     <!-- <div> -->
         <div class="container">
             <div class="row flex-wrap-reverse">
                 <!-- <div class="d-flex hero-section-content align-items-center flex-wrap"> -->
-                    <div class="col-12 col-md-6">                        
+                    <div class="col-12 col-md-6">
                         <div class="d-flex flex-column">
                             <div>
                                 <h1 class="font-55">

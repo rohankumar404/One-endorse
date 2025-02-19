@@ -144,7 +144,7 @@
                     spaceBetween: 40,
                 },
                 1024: { // Large screens (lg)
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                     spaceBetween: 40,
                 },
             },
