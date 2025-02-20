@@ -1,0 +1,24 @@
+.slide-card{
+    position: relative;
+    transition: 1s;
+}
+.celeb-category{
+    position: absolute;
+    right: 0;
+}
+.card-social-icon{
+    height: 35px;
+    width: 35px;
+    background-color: rgba(72, 247, 37, 0.150);
+    border-radius: 50%;
+}
+.social-fl img{
+    box-shadow: rgba(72, 247, 37, 0.329) 0px 0px 20px 0px;
+}
+.slide-card:hover .social-fl img{
+    background: rgb(98,155,34);
+    background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
+}
+.slide-card:hover .social-fl img{
+    box-shadow: rgba(64, 218, 33, 0.699) 0px 0px 20px 0px;
+}

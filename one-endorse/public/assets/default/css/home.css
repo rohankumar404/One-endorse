@@ -141,7 +141,133 @@ body {
     border-radius: 20px 20px 20px 52% / 20px 20px 20px 77% !important;
 }
 
+/* company slider section  */
+.companies-section-001{
+    position: relative;
+    background-image: url("https://img.freepik.com/premium-photo/muscle-fiber-type-genetics-sports-genetics-illustrated-3d-muscle-fiber-analysis-interface-showing_1165841-34991.jpg?w=826");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.companies-section-001:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.884);
+    z-index: -1;
+}
+.logos-wrapper-001{
+    background-color: #55851f5e;
+}
+.slider-container-001,
+.slider-container-002 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
 
+.slider-track-001,
+.slider-track-002 {
+    display: flex;
+    gap: 40px;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.slider-track-001 {
+    animation-name: sliderAnimation001;
+}
+
+.slider-track-002 {
+    animation-name: sliderAnimation002;
+}
+
+.slide-box{
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+    /* background: #fff; */
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.slide-box-001:hover,
+.slide-box-002:hover,
+.slide-box-003:hover,
+.slide-box-004:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(14, 30, 37, 0.281) 0px 2px 4px 0px, 
+                rgba(14, 30, 37, 0.418) 0px 2px 16px 0px;
+}
+
+.company-img-001,
+.company-img-002,
+.company-img-003,
+.company-img-004 {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes sliderAnimation001 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes sliderAnimation002 {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .slide-box-001,
+    .slide-box-002,
+    .slide-box-003,
+    .slide-box-004 {
+        width: 180px;
+        height: 90px;
+    }
+    
+    .slider-track-001,
+    .slider-track-002 {
+        animation-duration: 15s;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slide-box-001,
+    .slide-box-002,
+    .slide-box-003,
+    .slide-box-004 {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .slider-track-001,
+    .slider-track-002 {
+        animation-duration: 20s;
+        gap: 40px;
+    }
+}
 /* image gallery section  */
 .img-gallery{
     position: relative;

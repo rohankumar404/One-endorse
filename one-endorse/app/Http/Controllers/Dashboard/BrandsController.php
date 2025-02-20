@@ -40,7 +40,7 @@ class BrandsController extends Controller
         $secondSlideData = [
             [
                 'image' => 'https://i.pinimg.com/236x/9a/82/b1/9a82b108147779c98444ce4daf88a716.jpg',
-                'title' => 'Resabh Pant',
+                'title' => 'Rishabh Pant',
                 'category' => 'Cricket'
             ],
             [
@@ -50,7 +50,7 @@ class BrandsController extends Controller
             ],
             [
                 'image' => 'https://i.pinimg.com/736x/28/10/16/2810168324c93228899b3a9d79cce54e.jpg',
-                'title' => 'Akashar Patel','category' => 'Cricket'
+                'title' => 'Axar Patel','category' => 'Cricket'
             ],
             [
                 'image' => 'https://i.pinimg.com/474x/46/73/c8/4673c8705087f0dd4eb9eefe071a9802.jpg',

@@ -30,62 +30,93 @@
         </div>
     <!-- </div> -->
 </section>
-<section class="conpanies-ww py-80">
+<section class="companies-section-001 py-80">
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <h4 class="font-28 text-800">Trusted by Top Companies Worldwide</h4>
+            <div class="col-12 text-center">
+                <h4 class="font-28 text-800 mb-3">Trusted by Top Companies Worldwide</h4>
             </div>
         </div>
     </div>
-    <div class="companies-logos py-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-around p-0">                    
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
+    
+    <div class="logos-wrapper-001 py-40">
+        <!-- First Slider -->
+        <div class="slider-container-001">
+            <div class="slider-track-001" id="sliderTrack001">
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/1.png') }}" alt="Company 1" class="company-img-001">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-around p-0">                    
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/2.png') }}" alt="Company 2" class="company-img-002">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/3.png') }}" alt="Company 3" class="company-img-003">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/4.png') }}" alt="Company 4" class="company-img-004">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/5.png') }}" alt="Company 5" class="company-img-005">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/6.png') }}" alt="Company 6" class="company-img-006">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/7.png') }}" alt="Company 7" class="company-img-007">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/8.png') }}" alt="Company 8" class="company-img-008">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/9.png') }}" alt="Company 9" class="company-img-009">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/10.png') }}" alt="Company 10" class="company-img-0010">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/11.png') }}" alt="Company 11" class="company-img-0011">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/12.png') }}" alt="Company 12" class="company-img-0012">
                 </div>
             </div>
-            <div class="row mt-3 d-none d-md-flex">
-                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-around p-0">                    
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
+        </div>
+
+        <!-- Second Slider -->
+        <div class="slider-container-002 mt-4">
+            <div class="slider-track-002" id="sliderTrack002">
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/13.png') }}" alt="Company 13" class="company-img-0013">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-around p-0">                    
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
-                    <div class="c-logs border-1">
-                        <img src="" alt="Trusted Companies">
-                    </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/14.png') }}" alt="Company 14" class="company-img-0014">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/15.png') }}" alt="Company 15" class="company-img-0015">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/16.png') }}" alt="Company 16" class="company-img-0016">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/17.png') }}" alt="Company 17" class="company-img-0017">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/18.png') }}" alt="Company 18" class="company-img-0018">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/19.png') }}" alt="Company 19" class="company-img-0019">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/20.png') }}" alt="Company 20" class="company-img-0020">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/22.png') }}" alt="Company 22" class="company-img-0022">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/23.png') }}" alt="Company 23" class="company-img-0023">
+                </div>
+                <div class="slide-box">
+                    <img src="{{ asset('assets/img/logo-img/24.png') }}" alt="Company 24" class="company-img-0024">
                 </div>
             </div>
         </div>
@@ -237,7 +268,7 @@
                     <h1 class="font-34 text-800 mt-2">The Latest Industry News</h1>
                     <p class="font-20 text-500">Stay informed with our expert analysis and insights.</p>
                 </div>
-                <a href="#" class="border-pry rounded-ex-sm p-2  sdry-hover text-decoration-none text-black font-14">View All</a>
+                <a href="#" class="border-pry rounded-ex-sm p-2 sdry-hover text-decoration-none text-black font-14">View All</a>
             </div>
 
             <div class="slider_container_2nd" id="sliderContainer2nd">
