@@ -1,24 +1,102 @@
-.slide-card{
-    position: relative;
-    transition: 1s;
+:root {
+    /* Colors */
+    --icon-primary-color: #609822;
+    --arrow-hover-color: #fff;
+    --border-gray: #aaaaaa;
+    --bg-white: #fff;
+    
+    /* Gradients */
+    --primary-gradient: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
+    
+    /* Transitions */
+    --transition-fast: all 0.3s ease;
+    --transition-medium: all 1s ease;
+    --transition-slow: all 2s ease;
 }
-.celeb-category{
+
+/* Card Layout Styles */
+.slide-card {
+    position: relative;
+}
+
+/* Category Positioning */
+.celeb-category {
     position: absolute;
     right: 0;
+    top: 100px;
 }
-.card-social-icon{
-    height: 35px;
-    width: 35px;
-    background-color: rgba(72, 247, 37, 0.150);
-    border-radius: 50%;
+
+/* Status Dots */
+.status-dot {
+    width: 8px;
+    height: 8px;
+    opacity: 0.7;
+    transition: var(--transition-fast);
 }
-.social-fl img{
-    box-shadow: rgba(72, 247, 37, 0.329) 0px 0px 20px 0px;
+
+.status-dot:hover {
+    opacity: 1;
 }
-.slide-card:hover .social-fl img{
-    background: rgb(98,155,34);
-    background: linear-gradient(90deg, rgba(98,155,34,1) 0%, rgba(50,120,26,1) 100%);
+
+/* Social Icons */
+.social-item {
+    position: relative;
 }
-.slide-card:hover .social-fl img{
-    box-shadow: rgba(64, 218, 33, 0.699) 0px 0px 20px 0px;
+
+.social-item svg {
+    fill: currentColor;
+    transition: var(--transition-fast);
+}
+
+.social-item:hover svg {
+    fill: var(--icon-primary-color);
+}
+
+/* Tags */
+.section-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid var(--icon-primary-color);
+}
+
+.section-tag.bg-temp {
+    border: none;
+    background: var(--primary-gradient);
+}
+
+/* Top Corner Elements */
+.top-right-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top-right-corner img{
+    width: 100px;
+}
+.top-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    background: var(--bg-white);
+    border-color: var(--border-gray);
+    transition: var(--transition-medium);
+}
+
+.top-circle svg {
+    fill: currentColor;
+    transform: rotate(-45deg);
+    transition: var(--transition-fast);
+}
+
+/* Hover Effects */
+.slide-card:hover .top-circle {
+    background: var(--primary-gradient);
+}
+
+.slide-card:hover .top-circle svg {
+    fill: var(--arrow-hover-color);
+    transform: rotate(0deg);
 }

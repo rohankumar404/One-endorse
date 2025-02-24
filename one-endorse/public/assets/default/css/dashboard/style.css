@@ -93,41 +93,14 @@
 /* brands page  */
 /* actors celebrity section */
 .actors-celebrity-sec{
-    position: relative;
-    background-image: url("https://img.freepik.com/premium-photo/3d-render-film-reel-strip-clipping-path-isolated-white_807584-430.jpg?w=996");
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
+   background-color: #f0f0f0;
 }
 
-.actors-celebrity-sec:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsla(0, 0%, 100%, 0.938);
-    z-index: -1;
-}
 /* sports celebrity section */
 .sports-celebrity-sec{
-    position: relative;
-    background-image: url("https://img.freepik.com/premium-photo/image-showcases-diverse-athletes-running-towards-common-goal-symbolizing-teamwork-deter_924727-57774.jpg?w=826");
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
+    background: #fff;
 }
-.sports-celebrity-sec:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsla(0, 0%, 100%, 0.938);
-    z-index: -1;
-}
+
 
 /* celebrities page  */
 /* top brand section */

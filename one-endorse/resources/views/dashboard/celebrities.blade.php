@@ -116,45 +116,58 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script>
-    const initSlider = (selector) => {
-        if (!document.querySelector(selector)) {
-            console.warn(`Slider with selector "${selector}" not found.`);
-            return;
-        }
+const initSlider = (selector) => {
+    const sliderElement = document.querySelector(selector);
+    if (!sliderElement) {
+        console.warn(`Slider with selector "${selector}" not found.`);
+        return;
+    }
 
-        return new Swiper(selector, {
-            slidesPerView: 1, // Default for small screens
-            spaceBetween: 35, // Default spacing
-            loop: true, // Infinite loop for smooth transitions
-            autoplay: {
-                delay: 3000, // Delay between slides
-                disableOnInteraction: false, // Resume autoplay after interaction
+    const swiper = new Swiper(selector, {
+        slidesPerView: 1, // Default for small screens
+        spaceBetween: 35, // Default spacing
+        loop: true, // Infinite loop for smooth transitions
+        autoplay: {
+            delay: 3000, // Delay between slides
+            disableOnInteraction: false, // Resume autoplay after interaction
+        },
+        pagination: {
+            el: `${selector} .swiper-pagination`, // Scoped pagination element
+            clickable: true,
+        },
+        breakpoints: {
+            400: { // Medium screens (custom)
+                slidesPerView: 2,
+                spaceBetween: 35,
             },
-            pagination: {
-                el: `${selector} .swiper-pagination`, // Scoped pagination element
-                clickable: true,
+            768: { // Medium screens (md)
+                slidesPerView: 3,
+                spaceBetween: 40,
             },
-            breakpoints: {
-                400: { // Medium screens (custom)
-                    slidesPerView: 2,
-                    spaceBetween: 35,
-                },
-                768: { // Medium screens (md)
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                1024: { // Large screens (lg)
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
+            1024: { // Large screens (lg)
+                slidesPerView: 3,
+                spaceBetween: 40,
             },
-        });
-    };
-
-    // Initialize both sliders when DOM is fully loaded
-    document.addEventListener('DOMContentLoaded', () => {
-        initSlider('.firstSlider'); // For Featured Athletes slider
-        initSlider('.secondSlider'); // For Popular Sports slider
+        },
     });
+
+    // Pause autoplay on hover and resume on mouse leave
+    sliderElement.addEventListener('mouseenter', () => {
+        swiper.autoplay.stop();
+    });
+
+    sliderElement.addEventListener('mouseleave', () => {
+        swiper.autoplay.start();
+    });
+
+    return swiper;
+};
+
+// Initialize both sliders when DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initSlider('.firstSlider'); // For Featured Athletes slider
+    initSlider('.secondSlider'); // For Popular Sports slider
+});
+
 </script>
 @endpush
