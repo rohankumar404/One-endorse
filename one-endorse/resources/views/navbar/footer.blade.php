@@ -6,7 +6,7 @@
                     <img src="{{ asset('assets/img/images/logo.png') }}" alt="footer logo" style="width: 80px;"/>
                 </div>
                 <div class="footer-content py-4">
-                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ut, minus quisquam facere ipsa nemo id, magnam consequatur quaerat sequi consequuntur obcaecati unde, voluptatum laboriosam?</p>
+                    <p class="text-secondary">Transform your brand with powerful sports partnerships. Connect with elite athletes and top agencies to create compelling campaigns that resonate, engage audiences, and drive lasting success.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6">

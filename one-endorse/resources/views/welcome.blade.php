@@ -134,12 +134,12 @@
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-20">
                 <div class="marketing-card rounded-adv box-shadow-16">
                     <div class="card-img box-shadow-16 rounded-adv">
-                        <img clss="rounded-adv" src="https://img.freepik.com/premium-photo/photo-baseball-player_889227-33360.jpg?w=740" alt="Find Athletes">
+                        <img clss="rounded-adv" src="{{ asset('assets/img/images/find-you-thletes.jpg') }}" alt="Find Athletes">
                     </div>
                     <div class="card-cnt d-flex flex-column justify-content-center m-card-p">
                         <h4 class="font-24 text-700 text-center">Find Athletes</h4>
-                        <p class="font-14 text-normal text-center">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
-                        <a class="mt-3 mx-auto" href="#"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
+                        <p class="font-14 text-normal text-center">Connect with 15,000+ athletes across 120 countries & 150 sports—One Endorse fits your campaign needs.</p>
+                        <a class="mt-3 mx-auto" href="/dashboard/brands"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
                             <span class="font-12 text-normal">Click Now</span>
                             <span><svg enable-background="new 0 0 32 32" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg"><g id="Layer_1"><path d="m8.6436 30.4697c-.8063-.7441-.8574-2.0199-.1133-2.8262l10.748-11.6435-10.748-11.6436c-.7441-.8063-.693-2.082.1133-2.8262s2.082-.693 2.8262.1133l12 13c.707.7661.707 1.9468 0 2.7129l-12 13c-.7442.8063-2.02.8575-2.8262.1133z" fill="#444444"/></g></svg></span>
                         </button></a>
@@ -149,12 +149,12 @@
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-20">
                 <div class="marketing-card rounded-adv box-shadow-16">
                     <div class="card-img box-shadow-16 rounded-adv">
-                        <img clss="rounded-adv" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDuymprveKuuZEfUrD06b-w_h90I4NfJ9Zm0BA7LoViTPqoaaJ" alt="Find Athletes">
+                        <img clss="rounded-adv" src="{{ asset('assets/img/images/find-your-brands.jpg') }}" alt="Find Brands">
                     </div>
                     <div class="card-cnt d-flex flex-column justify-content-center m-card-p">
                         <h4 class="font-24 text-700 text-center">Find Brand</h4>
-                        <p class="font-14 text-normal text-center">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
-                        <a class="mt-3 mx-auto" href="#"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
+                        <p class="font-14 text-normal text-center">Find brands that align with your values and goals, building strong and impactful partnerships for long-term success.</p>
+                        <a class="mt-3 mx-auto" href="/dashboard/celebrities"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
                             <span class="font-12 text-normal">Click Now</span>
                             <span><svg enable-background="new 0 0 32 32" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg"><g id="Layer_1"><path d="m8.6436 30.4697c-.8063-.7441-.8574-2.0199-.1133-2.8262l10.748-11.6435-10.748-11.6436c-.7441-.8063-.693-2.082.1133-2.8262s2.082-.693 2.8262.1133l12 13c.707.7661.707 1.9468 0 2.7129l-12 13c-.7442.8063-2.02.8575-2.8262.1133z" fill="#444444"/></g></svg></span>
                         </button></a>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="card-cnt d-flex flex-column justify-content-center m-card-p">
                         <h4 class="font-24 text-700 text-center">Manage Campaign</h4>
-                        <p class="font-14 text-normal text-center">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
+                        <p class="font-14 text-normal text-center">Manage campaigns effortlessly with powerful tools designed to streamline your marketing strategy and maximize impact.</p>
                         <a class="mt-3 mx-auto" href="#"><button class="btn btn-secondary m-card-btn shadow-buttom border-0 d-flex justify-content-between align-items-center">
                             <span class="font-12 text-normal">Click Now</span>
                             <span><svg enable-background="new 0 0 32 32" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg"><g id="Layer_1"><path d="m8.6436 30.4697c-.8063-.7441-.8574-2.0199-.1133-2.8262l10.748-11.6435-10.748-11.6436c-.7441-.8063-.693-2.082.1133-2.8262s2.082-.693 2.8262.1133l12 13c.707.7661.707 1.9468 0 2.7129l-12 13c-.7442.8063-2.02.8575-2.8262.1133z" fill="#444444"/></g></svg></span>
@@ -192,42 +192,42 @@
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-20">
                     <div class="r-compaigns-card bg-white p-3 box-shadow-16 rounded-adv">
                         <div class="r-card-head border-bottom-black d-flex justify-content-between">
-                            <h4 class="font-34 text-800">Brand</h4>
+                            <h4 class="font-26 text-800">Future Campaigns</h4>
                             <div class="arrow-circle bg-gray d-flex align-items-center justify-content-center mb-2">
                                 <img src="../assets/img/icon/home/1235.png" alt="arrow">
                             </div>
                         </div>
-                        <p class="font-14 text-normal text-center py-15">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
+                        <p class="font-14 text-normal text-center py-15">Get ready for groundbreaking campaigns. Partner with athletes to boost your brand's visibility and impact.</p>
                         <div class="card-img rounded-adv box-shadow-16">
-                            <img clss="rounded-adv" src="https://img.freepik.com/premium-photo/photo-baseball-player_889227-33360.jpg?w=740" alt="Find Athletes">
+                            <img clss="rounded-adv" src="{{ asset('assets/img/images/future-campaigns.jpg') }}" alt="Future Campaigns">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-20">
                     <div class="r-compaigns-card bg-temp text-white p-3 box-shadow-16 rounded-adv-us">
                         <div class="r-card-head border-bottom-white d-flex justify-content-between">
-                            <h4 class="font-34 text-800">Brand</h4>
+                            <h4 class="font-26 text-800">Brand Synergy</h4>
                             <div class="arrow-circle bg-gray d-flex align-items-center justify-content-center mb-2">
                                 <img src="../assets/img/icon/home/1235.png" alt="arrow">
                             </div>
                         </div>
-                        <p class="font-14 text-normal text-center py-15">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
+                        <p class="font-14 text-normal text-center py-15">Anticipate campaigns that align your brand with top athletes. Create powerful partnerships for mutual success.</p>
                         <div class="card-img rounded-adv-us-frem box-shadow-16">
-                            <img clss="rounded-adv" src="https://img.freepik.com/premium-photo/photo-baseball-player_889227-33360.jpg?w=740" alt="Find Athletes">
+                            <img clss="rounded-adv" src="{{ asset('assets/img/images/brand-synergy.jpg') }}" alt="Brand Synergy">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-20">
                     <div class="r-compaigns-card bg-white p-3 box-shadow-16 rounded-adv">
                         <div class="r-card-head border-bottom-black d-flex justify-content-between">
-                            <h4 class="font-34 text-800">Brand</h4>
+                            <h4 class="font-26 text-800">Marketing Impact</h4>
                             <div class="arrow-circle bg-gray d-flex align-items-center justify-content-center mb-2">
                                 <img src="../assets/img/icon/home/1235.png" alt="arrow">
                             </div>
                         </div>
-                        <p class="font-14 text-normal text-center py-15">Connect with over 15,000 athletes from 120 countries and 150 sports—OpenSponsorship has the right fit for your campaign.</p>
+                        <p class="font-14 text-normal text-center py-15">Prepare for campaigns that leverage sports to enhance your brand. Connect with athletes to make a significant impact.</p>
                         <div class="card-img rounded-adv box-shadow-16">
-                            <img clss="rounded-adv" src="https://img.freepik.com/premium-photo/photo-baseball-player_889227-33360.jpg?w=740" alt="Find Athletes">
+                            <img clss="rounded-adv" src="{{ asset('assets/img/images/marketing-impact.jpg') }}" alt="Marketing Impact">
                         </div>
                     </div>
                 </div>
@@ -299,7 +299,7 @@
                     <h3 class="font-34 text-800 text-white mt-3">Find Your Perfect <br> Collaborator</h3>
                 </div>
                 <div class="sign-btn ">
-                    <button class="border-pry btn-rounded border-0 p-hover bg-temp text-white mt-3"><a href="{{ route('register') }}">Sign Up</a></button>
+                    <button class="border-pry btn-rounded border-0 p-hover bg-temp text-white mt-3"><a href="{{ route('register') }}">Sign Up Now</a></button>
                 </div>
                 <div class="p-4">
                     <img src="../assets/img/icon/elements/Layer_1.png" alt="elements">
@@ -312,8 +312,8 @@
                     </div>
                     <div class=" col-10 discover-content d-flex justify-content-between">
                         <div class="d-cont text-white pl-20">
-                            <h4 class="font-24 text-600">How It Works</h4>
-                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                            <h4 class="font-24 text-600">Browse Our Curated List</h4>
+                            <p class="font-14 text-normal">Our platform features a diverse range of athletes and agencies, ready to align with your brand's vision.</p>
                         </div>
                     </div>
                 </div>
@@ -323,8 +323,8 @@
                     </div>
                     <div class=" col-10 discover-content d-flex justify-content-between pt-4 pt-md-0">
                         <div class="d-cont text-white pl-20">
-                            <h4 class="font-24 text-600">How It Works</h4>
-                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                            <h4 class="font-24 text-600">Select Your Ideal Partner</h4>
+                            <p class="font-14 text-normal">Identify athletes who resonate with your brand values and have the reach to influence your target audience.</p>
                         </div>
                     </div>
                 </div>
@@ -334,8 +334,8 @@
                     </div>
                     <div class=" col-10 discover-content d-flex justify-content-between pt-4 pt-md-0">
                         <div class="d-cont text-white pl-20">
-                            <h4 class="font-24 text-600">How It Works</h4>
-                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                            <h4 class="font-24 text-600">Initiate Meaningful Connections</h4>
+                            <p class="font-14 text-normal">Reach out to your chosen sports figures or their representatives to discuss potential collaboration opportunities.</p>
                         </div>
                     </div>
                 </div>
@@ -345,8 +345,8 @@
                     </div>
                     <div class=" col-10 discover-content d-flex justify-content-between pt-4 pt-md-0">
                         <div class="d-cont text-white pl-20">
-                            <h4 class="font-24 text-600">How It Works</h4>
-                            <p class="font-14 text-normal">Browse our curated list of sports Sports Celebss and agencies to find your ideal partner.</p>
+                            <h4 class="font-24 text-600">Launch and Track Your Campaign</h4>
+                            <p class="font-14 text-normal">Execute your campaign with confidence, knowing you can monitor its success and make data-driven decisions.</p>
                         </div>
                     </div>
                 </div>
