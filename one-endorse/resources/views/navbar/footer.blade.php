@@ -12,7 +12,7 @@
             <div class="col-12 col-md-6">
                 <div class="footer-menu">
                     <div class="navbar d-flex justify-content-md-end justify-content-center">
-                        <ul class="nav-list d-flex flex-wrap justify-content-center gap-5 uppercase">
+                        <ul class="nav-list d-flex flex-wrap justify-content-center gap-2 uppercase">
                             <li class="nav-item text-hover"><a href="/">main</a></li>
                             <li class="nav-item text-hover"><a href="/about">About</a></li>
                             <li class="nav-item text-hover"><a href="/contact">Contacts</a></li>
